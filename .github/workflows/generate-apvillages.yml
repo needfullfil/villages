@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -26,7 +26,6 @@ jobs:
           node-version: 20
 
       - name: Generate apvillages.json
-        shell: bash
         run: |
           rm -f apvillages.json
 
@@ -40,22 +39,22 @@ jobs:
             return String(name)
 
               // Remove entire (...) including brackets
-              .replace(/\s*\([^)]*\)\s*/g, " ")
+              .replace(/\s*\([^)]*\)\s*/g, "")
 
-              // Collapse multiple spaces
-              .replace(/\s+/g, " ")
-
-              // Remove spaces after period (A. Vemavaram -> A.Vemavaram)
+              // A. Vemavaram -> A.Vemavaram
               .replace(/\.\s+/g, ".")
 
               // Remove spaces around hyphen
               .replace(/\s*-\s*/g, "-")
 
+              // Remove spaces around slash
+              .replace(/\s*\/\s*/g, "/")
+
               // Remove spaces after comma
               .replace(/,\s+/g, ",")
 
-              // Remove spaces around slash
-              .replace(/\s*\/\s*/g, "/")
+              // Remove ALL remaining whitespace
+              .replace(/\s+/g, "")
 
               .trim();
           }
@@ -88,7 +87,6 @@ jobs:
           EOF
 
       - name: Commit & Push
-        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
