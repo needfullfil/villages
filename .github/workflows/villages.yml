@@ -1,0 +1,317 @@
+name: Generate AP Village Apps
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+    paths:
+      - apvillages.json
+      - template.html
+      - manifest.json
+      - sw.js
+      - apps.json
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate Village Apps
+
+        run: |
+
+          const fs = require("fs");
+          const path = require("path");
+
+          const villages =
+            JSON.parse(
+              fs.readFileSync(
+                "apvillages.json",
+                "utf8"
+              )
+            );
+
+          const htmlTemplate =
+            fs.readFileSync(
+              "template.html",
+              "utf8"
+            );
+
+          const manifestTemplate =
+            fs.readFileSync(
+              "manifest.json",
+              "utf8"
+            );
+
+          const swTemplate =
+            fs.readFileSync(
+              "sw.js",
+              "utf8"
+            );
+
+          const appsTemplate =
+            fs.readFileSync(
+              "apps.json",
+              "utf8"
+            );
+
+          function folderName(
+            village,
+            pincode
+          ) {
+
+            return (
+
+              village
+
+                .toLowerCase()
+
+                .normalize("NFKD")
+
+                .replace(/[^\w]/g, "")
+
+                + pincode
+
+            );
+
+          }
+
+          function upper(
+            village
+          ) {
+
+            return village.toUpperCase();
+
+          }
+
+          function replaceAll(
+            text,
+            village,
+            pincode,
+            folder
+          ) {
+
+            return text
+
+              .replaceAll(
+                "{{VILLAGE_NAME}}",
+                village
+              )
+
+              .replaceAll(
+                "{{VILLAGE_NAME_UPPER}}",
+                upper(village)
+              )
+
+              .replaceAll(
+                "{{PINCODE}}",
+                pincode
+              )
+
+              .replaceAll(
+                "{{VILLAGE_FOLDER}}",
+                folder
+              );
+
+          }
+
+          const root =
+            process.cwd();
+
+          const keep = new Set([
+
+            ".git",
+
+            ".github",
+
+            "icons",
+
+            "template.html",
+
+            "manifest.json",
+
+            "sw.js",
+
+            "apps.json",
+
+            "app.js",
+
+            "main.css",
+
+            "apvillages.json",
+
+            "README.md",
+
+            ".gitignore"
+
+          ]);
+
+          for (
+            const item of
+            fs.readdirSync(root)
+          ) {
+
+            if (
+              keep.has(item)
+            ) continue;
+
+            const full =
+              path.join(
+                root,
+                item
+              );
+
+            if (
+              fs.statSync(full).isDirectory()
+            ) {
+
+              fs.rmSync(
+                full,
+                {
+                  recursive: true,
+                  force: true
+                }
+              );
+
+            }
+
+          }
+
+          villages.forEach(v=>{
+
+            const village =
+              String(v.n).trim();
+
+            const pincode =
+              String(v.p).trim();
+
+            const folder =
+              folderName(
+                village,
+                pincode
+              );
+
+            const dir =
+              path.join(
+                root,
+                folder
+              );
+
+            fs.mkdirSync(
+              dir,
+              {
+                recursive:true
+              }
+            );
+
+            fs.writeFileSync(
+
+              path.join(
+                dir,
+                "index.html"
+              ),
+
+              replaceAll(
+
+                htmlTemplate,
+
+                village,
+
+                pincode,
+
+                folder
+
+              )
+
+            );
+
+            fs.writeFileSync(
+
+              path.join(
+                dir,
+                "manifest.json"
+              ),
+
+              replaceAll(
+
+                manifestTemplate,
+
+                village,
+
+                pincode,
+
+                folder
+
+              )
+
+            );
+
+            fs.writeFileSync(
+
+              path.join(
+                dir,
+                "sw.js"
+              ),
+
+              replaceAll(
+
+                swTemplate,
+
+                village,
+
+                pincode,
+
+                folder
+
+              )
+
+            );
+
+            fs.writeFileSync(
+
+              path.join(
+                dir,
+                "apps.json"
+              ),
+
+              appsTemplate
+
+            );
+
+          });
+
+          console.log(
+            `Generated ${villages.length} village apps.`
+          );
+
+        shell: node {0}
+
+      - name: Commit Changes
+
+        run: |
+
+          git config user.name "github-actions"
+
+          git config user.email "github-actions@github.com"
+
+          git add .
+
+          git diff --cached --quiet || git commit -m "Generate AP Village Apps"
+
+          git push
