@@ -3,8 +3,8 @@ name: Generate AP Villages
 on:
   push:
     paths:
-      - "ap.json"
-      - ".github/workflows/generate-apvillages.yml"
+      - ap.json
+      - .github/workflows/generate-apvillages.yml
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -31,27 +31,46 @@ jobs:
           rm -f apvillages.json
 
           node <<'EOF'
-          const fs = require('fs');
+          const fs = require("fs");
 
-          const data = JSON.parse(fs.readFileSync('ap.json', 'utf8'));
-
+          const data = JSON.parse(fs.readFileSync("ap.json", "utf8"));
           const villages = [];
 
-          if (data?.districts) {
-            for (const district of Object.values(data.districts)) {
-              if (!district?.subdistricts) continue;
+          function cleanName(name) {
+            return String(name)
 
-              for (const mandal of Object.values(district.subdistricts)) {
-                if (!Array.isArray(mandal?.villages)) continue;
+              // Remove entire (...) including brackets
+              .replace(/\s*\([^)]*\)\s*/g, " ")
 
-                for (const v of mandal.villages) {
-                  if (!v.name || !v.pincode) continue;
+              // Collapse multiple spaces
+              .replace(/\s+/g, " ")
 
-                  villages.push({
-                    n: String(v.name).trim(),
-                    p: String(v.pincode).trim()
-                  });
-                }
+              // Remove spaces after period (A. Vemavaram -> A.Vemavaram)
+              .replace(/\.\s+/g, ".")
+
+              // Remove spaces around hyphen
+              .replace(/\s*-\s*/g, "-")
+
+              // Remove spaces after comma
+              .replace(/,\s+/g, ",")
+
+              // Remove spaces around slash
+              .replace(/\s*\/\s*/g, "/")
+
+              .trim();
+          }
+
+          for (const district of Object.values(data.districts || {})) {
+            for (const mandal of Object.values(district.subdistricts || {})) {
+              for (const village of (mandal.villages || [])) {
+
+                if (!village.name || !village.pincode) continue;
+
+                villages.push({
+                  n: cleanName(village.name),
+                  p: String(village.pincode).trim()
+                });
+
               }
             }
           }
@@ -59,30 +78,17 @@ jobs:
           villages.sort((a, b) => a.n.localeCompare(b.n));
 
           fs.writeFileSync(
-            'apvillages.json',
-            JSON.stringify(villages, null, 2),
-            'utf8'
+            "apvillages.json",
+            JSON.stringify(villages),
+            "utf8"
           );
 
           console.log(`Generated ${villages.length} villages.`);
-          console.log("Exists:", fs.existsSync("apvillages.json"));
-          console.log("Size:", fs.statSync("apvillages.json").size, "bytes");
+          console.log(`Size: ${fs.statSync("apvillages.json").size} bytes`);
           EOF
 
-      - name: Verify generated file
-        run: |
-          echo "Current directory:"
-          pwd
-
-          echo ""
-          echo "Files:"
-          ls -lah
-
-          echo ""
-          echo "First lines:"
-          head -20 apvillages.json
-
       - name: Commit & Push
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
