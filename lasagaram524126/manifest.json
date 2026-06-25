@@ -1,0 +1,62 @@
+{
+  "name": "L.A.Sagaram Tech Universe",
+
+  "short_name": "L.A.Sagaram",
+
+  "description": "The futuristic tech ecosystem of L.A.Sagaram.",
+
+  "start_url": "/lasagaram524126/",
+
+  "scope": "/lasagaram524126/",
+
+  "display": "standalone",
+
+  "orientation": "portrait",
+
+  "background_color": "#07111f",
+
+  "theme_color": "#07111f",
+
+  "lang": "en",
+
+  "dir": "ltr",
+
+  "categories": [
+
+    "education",
+    "lifestyle",
+    "shopping",
+    "social"
+
+  ],
+
+  "icons": [
+
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+
+  ],
+
+  "screenshots": [
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "L.A.Sagaram Tech Universe"
+    }
+
+  ]
+}

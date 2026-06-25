@@ -1,0 +1,62 @@
+{
+  "name": "ChinnaKongatam Tech Universe",
+
+  "short_name": "ChinnaKongatam",
+
+  "description": "The futuristic tech ecosystem of ChinnaKongatam.",
+
+  "start_url": "/chinnakongatam517424/",
+
+  "scope": "/chinnakongatam517424/",
+
+  "display": "standalone",
+
+  "orientation": "portrait",
+
+  "background_color": "#07111f",
+
+  "theme_color": "#07111f",
+
+  "lang": "en",
+
+  "dir": "ltr",
+
+  "categories": [
+
+    "education",
+    "lifestyle",
+    "shopping",
+    "social"
+
+  ],
+
+  "icons": [
+
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+
+  ],
+
+  "screenshots": [
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "ChinnaKongatam Tech Universe"
+    }
+
+  ]
+}

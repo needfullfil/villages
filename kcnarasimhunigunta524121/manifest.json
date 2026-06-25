@@ -1,0 +1,62 @@
+{
+  "name": "K.C.Narasimhunigunta Tech Universe",
+
+  "short_name": "K.C.Narasimhunigunta",
+
+  "description": "The futuristic tech ecosystem of K.C.Narasimhunigunta.",
+
+  "start_url": "/kcnarasimhunigunta524121/",
+
+  "scope": "/kcnarasimhunigunta524121/",
+
+  "display": "standalone",
+
+  "orientation": "portrait",
+
+  "background_color": "#07111f",
+
+  "theme_color": "#07111f",
+
+  "lang": "en",
+
+  "dir": "ltr",
+
+  "categories": [
+
+    "education",
+    "lifestyle",
+    "shopping",
+    "social"
+
+  ],
+
+  "icons": [
+
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+
+  ],
+
+  "screenshots": [
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "K.C.Narasimhunigunta Tech Universe"
+    }
+
+  ]
+}

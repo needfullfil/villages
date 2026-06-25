@@ -1,0 +1,62 @@
+{
+  "name": "Gollagudem Tech Universe",
+
+  "short_name": "Gollagudem",
+
+  "description": "The futuristic tech ecosystem of Gollagudem.",
+
+  "start_url": "/gollagudem533352/",
+
+  "scope": "/gollagudem533352/",
+
+  "display": "standalone",
+
+  "orientation": "portrait",
+
+  "background_color": "#07111f",
+
+  "theme_color": "#07111f",
+
+  "lang": "en",
+
+  "dir": "ltr",
+
+  "categories": [
+
+    "education",
+    "lifestyle",
+    "shopping",
+    "social"
+
+  ],
+
+  "icons": [
+
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+
+  ],
+
+  "screenshots": [
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Gollagudem Tech Universe"
+    }
+
+  ]
+}

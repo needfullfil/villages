@@ -1,0 +1,390 @@
+[
+  {
+    "id": "kidlab",
+    "name": "KidLab",
+    "category": "SCIENCE",
+    "badge": "INTERNATIONAL SCIENCE APP",
+    "description": "Interactive science learning missions, futuristic quizzes, visual explanations and game-like educational experiences for students.",
+    "url": "https://villagekidlab.vidhwaan.com",
+    "icon": "https://villagekidlab.vidhwaan.com/icons/logo2.png",
+    "featured": false
+  },
+  {
+    "id": "billwaan",
+    "name": "Billwaan App",
+    "category": "BUSINESS",
+    "badge": "BILLING & INVOICES",
+    "description": "Create professional Bills, Invoices, Estimates, Quotations, Receipts and Proforma Invoices with beautiful PDF export, print and share features. Perfect for businesses, shops, freelancers and professionals.",
+    "url": "https://bill.vidhwaan.com",
+    "icon": "https://bill.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+  {
+    "id": "gita",
+    "name": "Bhagavad Gita",
+    "category": "SPIRITUAL",
+    "badge": "SPIRITUAL EXPERIENCE",
+    "description": "Daily spiritual wisdom, Bhagavad Gita learning and peaceful life guidance experience.",
+    "url": "https://gita.vidhwaan.com",
+    "icon": "https://gita.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+  {
+    "id": "zero",
+    "name": "Zero App",
+    "category": "SOCIAL",
+    "badge": "REELS & SHORT VIDEOS",
+    "description": "Upload your YouTube Short videos, share your creativity, explore trending reels, and become part of a next-generation social video community.",
+    "url": "https://zeroapp.vidhwaan.com",
+    "icon": "https://zeroapp.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+  {
+    "id": "quotes",
+    "name": "Quotes",
+    "category": "MOTIVATION",
+    "badge": "DAILY INSPIRATION",
+    "description": "Premium quotes, powerful thoughts and motivational daily inspiration ecosystem.",
+    "url": "https://quotes.vidhwaan.com",
+    "icon": "https://quotes.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+  {
+    "id": "marketplace",
+    "name": "Village Marketplace",
+    "category": "MARKETPLACE",
+    "badge": "VILLAGE COMMERCE",
+    "description": "Village commerce, buying, selling and futuristic local delivery ecosystem.",
+    "url": "https://market.vidhwaan.com",
+    "icon": "https://market.vidhwaan.com/icons/icon-512.png",
+    "featured": true
+  },
+  {
+    "id": "code-notes",
+    "name": "Code & Notes",
+    "category": "PRODUCTIVITY",
+    "badge": "STUDENTS & DEVELOPERS",
+    "description": "Write notes, save ideas, practice coding, store code snippets and organize study materials in one place. Perfect for students, developers and lifelong learners.",
+    "url": "https://apps.vidhwaan.com/",
+    "icon": "https://utukur.vidhwaan.com/icons/dev.png",
+    "featured": false
+  },
+  {
+    "id": "mygov",
+    "name": "MyGov India",
+    "category": "ప్రభుత్వ సేవలు",
+    "badge": "అధికారిక ప్రభుత్వ పోర్టల్",
+    "description": "ప్రభుత్వ కార్యక్రమాల్లో పాల్గొనండి, మీ అభిప్రాయాలను పంచుకోండి మరియు దేశ అభివృద్ధి కార్యక్రమాల సమాచారం పొందండి.",
+    "url": "https://www.mygov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "house-tax",
+    "name": "ఇంటి పన్ను",
+    "category": "ఆస్తి సేవలు",
+    "badge": "ఇంటి పన్ను సేవలు",
+    "description": "ఇంటి వివరాలు చూడండి, పన్ను చెల్లించండి మరియు రసీదులను డౌన్‌లోడ్ చేసుకోండి.",
+    "url": "https://swarnapanchayat.apcfss.in/LoginHouseTaxPayment",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "land-records",
+    "name": "మీ భూమి",
+    "category": "భూ రికార్డులు",
+    "badge": "భూమి సేవలు",
+    "description": "భూమి యాజమాన్యం, సర్వే నంబర్లు, అడంగల్ మరియు 1-బి వివరాలను చూడండి.",
+    "url": "https://meebhoomi.ap.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "meekosam",
+    "name": "మీ కోసం",
+    "category": "ఫిర్యాదులు",
+    "badge": "ప్రజా ఫిర్యాదులు",
+    "description": "గ్రామ సమస్యలు మరియు ప్రజా ఫిర్యాదులను ప్రభుత్వానికి తెలియజేసి స్థితిని తెలుసుకోండి.",
+    "url": "https://meekosam.ap.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "aadhaar",
+    "name": "ఆధార్ సేవలు",
+    "category": "గుర్తింపు సేవలు",
+    "badge": "UIDAI",
+    "description": "ఆధార్ డౌన్‌లోడ్ చేసుకోండి, చిరునామా మరియు మొబైల్ నంబర్ నవీకరించండి.",
+    "url": "https://uidai.gov.in/en/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "digilocker",
+    "name": "డిజిలాకర్",
+    "category": "డిజిటల్ పత్రాలు",
+    "badge": "డిజిటల్ ఇండియా",
+    "description": "ఆధార్, పాన్, మార్కుల మెమోలు, లైసెన్స్ మరియు ఇతర పత్రాలను డిజిటల్ రూపంలో పొందండి.",
+    "url": "https://www.digilocker.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "pan",
+    "name": "తక్షణ పాన్ కార్డ్",
+    "category": "ఆదాయపు పన్ను",
+    "badge": "పాన్ సేవలు",
+    "description": "కొత్త పాన్ కార్డ్ కోసం దరఖాస్తు చేసి ఈ-పాన్‌ను ఉచితంగా పొందండి.",
+    "url": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan/getNewEpan",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "voter",
+    "name": "ఓటర్ సేవలు",
+    "category": "ఎన్నికలు",
+    "badge": "ఎన్నికల సంఘం",
+    "description": "ఓటర్ ఐడీ కోసం దరఖాస్తు చేయండి, వివరాలు సవరించండి మరియు ఓటరు జాబితా చూడండి.",
+    "url": "https://voters.eci.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "electricity",
+    "name": "విద్యుత్ సేవలు",
+    "category": "వినియోగ సేవలు",
+    "badge": "విద్యుత్ బిల్లు",
+    "description": "విద్యుత్ బిల్లులు చెల్లించండి, రసీదులు డౌన్‌లోడ్ చేసుకోండి మరియు వివరాలు చూడండి.",
+    "url": "https://www.apspdcl.in/ConsumerDashboard/login.jsp",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+
+  {
+    "id": "hpgas",
+    "name": "హెచ్‌పీ గ్యాస్",
+    "category": "ఎల్పీజీ సేవలు",
+    "badge": "గ్యాస్ బుకింగ్",
+    "description": "గ్యాస్ సిలిండర్ బుక్ చేయండి, డెలివరీ స్థితి తెలుసుకోండి మరియు చెల్లింపులు చేయండి.",
+    "url": "https://myhpgas.in/myHPGas/QuickPay.aspx",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "umang",
+    "name": "ఉమంగ్",
+    "category": "ప్రభుత్వ సేవలు",
+    "badge": "ఆల్ ఇన్ వన్ సేవలు",
+    "description": "పీఎఫ్, పెన్షన్, గ్యాస్, ఆధార్ మరియు వేలాది ప్రభుత్వ సేవలను ఒకే చోట పొందండి.",
+    "url": "https://web.umang.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "parivahan",
+    "name": "డ్రైవింగ్ లైసెన్స్ & వాహన సేవలు",
+    "category": "రవాణా సేవలు",
+    "badge": "పరివహన్ సేవ",
+    "description": "డ్రైవింగ్ లైసెన్స్, వాహన రిజిస్ట్రేషన్, ఆర్‌సీ మరియు ఇతర రవాణా సేవలను పొందండి.",
+    "url": "https://parivahan.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "passport",
+    "name": "పాస్‌పోర్ట్ సేవ",
+    "category": "ప్రయాణ పత్రాలు",
+    "badge": "విదేశీ వ్యవహారాల శాఖ",
+    "description": "పాస్‌పోర్ట్ కోసం దరఖాస్తు చేయండి, అపాయింట్‌మెంట్ బుక్ చేసుకోండి మరియు స్థితిని తెలుసుకోండి.",
+    "url": "https://www.passportindia.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "udyam",
+    "name": "ఎంఎస్‌ఎంఈ నమోదు",
+    "category": "వ్యాపార సేవలు",
+    "badge": "ఉద్యమ్ పోర్టల్",
+    "description": "మీ వ్యాపారాన్ని MSMEగా నమోదు చేసుకుని ప్రభుత్వ ప్రయోజనాలు పొందండి.",
+    "url": "https://www.udyamregistration.gov.in/UdyamRegistration.aspx",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "emergency",
+    "title": "అత్యవసర సేవలు",
+    "number": "112",
+    "icon": "🚨",
+    "description": "పోలీస్, అగ్నిమాపక, వైద్య మరియు ఇతర అత్యవసర పరిస్థితుల కోసం వెంటనే కాల్ చేయండి."
+  },
+  {
+    "id": "ambulance",
+    "title": "అంబులెన్స్ సేవలు",
+    "number": "108",
+    "icon": "🚑",
+    "description": "ప్రమాదాలు, తీవ్రమైన అనారోగ్యం, గర్భిణీ అత్యవసర పరిస్థితులు మరియు వైద్య రవాణా కోసం ఉచిత అంబులెన్స్ సేవ."
+  },
+  {
+    "id": "women",
+    "title": "మహిళా భద్రత",
+    "number": "181",
+    "icon": "👩",
+    "description": "వేధింపులు, హింస లేదా ఇబ్బందులు ఎదుర్కొంటున్న మహిళలకు అత్యవసర సహాయం, రక్షణ మరియు సలహా సేవలు."
+  },
+  {
+    "id": "child",
+    "title": "బాలల రక్షణ",
+    "number": "1098",
+    "icon": "🧒",
+    "description": "బాలలపై వేధింపులు, బాల కార్మికులు, తప్పిపోయిన పిల్లలు మరియు రక్షణ అవసరమైన బాలల విషయాలను తెలియజేయండి."
+  },
+  {
+    "id": "cybercrime",
+    "title": "సైబర్ నేరాలు",
+    "number": "1930",
+    "icon": "🛡️",
+    "description": "UPI మోసాలు, ఆన్‌లైన్ మోసాలు, నకిలీ కాల్స్, బ్యాంకు మోసాలు మరియు సైబర్ నేరాలను వెంటనే ఫిర్యాదు చేయండి."
+  },
+  {
+    "id": "electricity",
+    "title": "విద్యుత్ ఫిర్యాదులు",
+    "number": "1912",
+    "icon": "⚡",
+    "description": "కరెంట్ పోవడం, ట్రాన్స్‌ఫార్మర్ సమస్యలు, విద్యుత్ లోపాలు మరియు బిల్లింగ్ సమస్యలను తెలియజేయండి."
+  },
+  {
+    "id": "kisan",
+    "title": "కిసాన్ సహాయ కేంద్రం",
+    "number": "1551",
+    "icon": "🌾",
+    "description": "వ్యవసాయ సలహాలు, పంటల సమాచారం, రైతు సంక్షేమ పథకాలు మరియు ఇతర వ్యవసాయ సహాయం పొందండి."
+  },
+  {
+    "id": "voter",
+    "title": "ఓటర్ హెల్ప్‌లైన్",
+    "number": "1950",
+    "icon": "🗳️",
+    "description": "ఓటర్ ఐడీ, ఓటరు జాబితా, ఎన్నికల సమాచారం మరియు ఓటర్ నమోదు సేవల కోసం సంప్రదించండి."
+  },
+  {
+    "id": "acb",
+    "title": "అవినీతి నిరోధక శాఖ",
+    "number": "14400",
+    "icon": "⚖️",
+    "description": "లంచం, అవినీతి, అధికార దుర్వినియోగం మరియు ఇతర అవినీతి సంబంధిత ఫిర్యాదులను నమోదు చేయండి."
+  },
+  {
+    "id": "acbwhatsapp",
+    "title": "ACB వాట్సాప్ ఫిర్యాదులు",
+    "number": "8333995858",
+    "icon": "📱",
+    "description": "అవినీతి సంబంధిత ఫోటోలు, వీడియోలు, పత్రాలు మరియు ఇతర ఆధారాలను వాట్సాప్ ద్వారా పంపండి."
+  },
+  {
+    "id": "fire",
+    "title": "అగ్నిమాపక సేవలు",
+    "number": "101",
+    "icon": "🔥",
+    "description": "అగ్ని ప్రమాదాలు, రక్షణ చర్యలు మరియు అగ్నిమాపక సహాయం కోసం వెంటనే కాల్ చేయండి."
+  },
+  {
+    "id": "gas",
+    "title": "గ్యాస్ లీకేజీ అత్యవసర సేవ",
+    "number": "1906",
+    "icon": "⛽",
+    "description": "LPG గ్యాస్ లీకేజీ, గ్యాస్ ప్రమాదాలు మరియు అత్యవసర భద్రతా సహాయం కోసం సంప్రదించండి."
+  },
+
+
+
+  {
+    "id": 1,
+    "badge": "SCIENCE",
+    "time": "FEATURED",
+    "title": "KidLab",
+    "description": "Interactive science missions, quizzes, experiments and futuristic learning experiences for students.",
+    "url": "https://villagekidlab.vidhwaan.com"
+  },
+  {
+    "id": 2,
+    "badge": "SPIRITUAL",
+    "time": "POPULAR",
+    "title": "Bhagavad Gita",
+    "description": "Reel-style Bhagavad Gita learning experience with timeless wisdom and daily spiritual guidance.",
+    "url": "https://gita.vidhwaan.com"
+  },
+  {
+    "id": 3,
+    "badge": "QUOTES",
+    "time": "TRENDING",
+    "title": "Quotes",
+    "description": "Thousands of motivational, inspirational and life-changing quotes in a premium reading experience.",
+    "url": "https://quotes.vidhwaan.com"
+  },
+  {
+    "id": 4,
+    "badge": "AI ECOSYSTEM",
+    "time": "FLAGSHIP",
+    "title": "Vidhwaan AI",
+    "description": "Advanced AI platform powering intelligent assistants, automation systems, productivity tools, knowledge engines and next-generation digital experiences across the Vidhwaan ecosystem.",
+    "url": "https://ai.vidhwaan.com"
+  },
+  {
+    "id": 5,
+    "badge": "AI SERVICES",
+    "time": "SMART AUTOMATION",
+    "title": "VidhAI",
+    "description": "AI-powered automation, intelligent business solutions, website development, workflow optimization and modern digital transformation services.",
+    "url": "https://vidhai.vidhwaan.com"
+  },
+  {
+    "id": 6,
+    "badge": "MARKETPLACE",
+    "time": "COMING SOON",
+    "title": "Village Marketplace",
+    "description": "Digital commerce platform connecting local products, services and village businesses through a modern village-first marketplace ecosystem.",
+    "url": "https://market.vidhwaan.com"
+  },
+  {
+    "id": 7,
+    "badge": "FOUNDATION",
+    "time": "SOCIAL IMPACT",
+    "title": "Foundation",
+    "description": "Technology-driven social initiatives focused on accessibility, education, inclusion and community empowerment.",
+    "url": "https://foundation.vidhwaan.com"
+  },
+  {
+    "id": 8,
+    "badge": "BUSINESS",
+    "time": "PRO",
+    "title": "₹1 Website + App",
+    "description": "Affordable digital presence with professional website and app solutions designed for businesses, startups and local entrepreneurs.",
+    "url": "https://app.vidhwaan.com"
+  },
+  {
+    "id": 9,
+    "badge": "SKILLS",
+    "time": "COMMUNITY",
+    "title": "Skills & Livelihood",
+    "description": "Skill development, practical learning, employment support and livelihood opportunities for a stronger future.",
+    "url": "https://earn.vidhwaan.com"
+  },
+  {
+    "id": 10,
+    "badge": "DEVELOPER SUITE",
+    "time": "EXPANDING",
+    "title": "Vidhwaan Apps Platform",
+    "description": "Developer and productivity workspace featuring VidCode, VidWord, project tools, note management, cloud storage and future AI-powered utilities in one ecosystem.",
+    "url": "https://apps.vidhwaan.com"
+  },
+  {
+    "id": 11,
+    "badge": "TECHNOLOGY",
+    "time": "GLOBAL",
+    "title": "Vidhwaan Technologies",
+    "description": "Modern digital infrastructure, automation systems, cloud-native platforms and scalable software solutions built for startups, enterprises and communities worldwide.",
+    "url": "https://tech.vidhwaan.com"
+  },
+  {
+    "id": 12,
+    "badge": "APP STORE",
+    "time": "NEW",
+    "title": "Vidhwaan App Store",
+    "description": "Discover and launch all Vidhwaan applications from one place. Explore AI platforms, productivity tools, education apps, community solutions, business services and future innovations across the growing Vidhwaan ecosystem.",
+    "url": "https://store.vidhwaan.com"
+  },
+  {
+    "id": 13,
+    "badge": "OFFICIAL",
+    "time": "GLOBAL NETWORK",
+    "title": "Vidhwaan Group",
+    "description": "Official digital ecosystem connecting Vidhwaan platforms, technology products, AI systems, Cultural initiatives, community projects and future innovations under one unified network.",
+    "url": "https://vidhwaan.com"
+  }
+]

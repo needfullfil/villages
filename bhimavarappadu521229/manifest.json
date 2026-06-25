@@ -1,0 +1,62 @@
+{
+  "name": "Bhimavarappadu Tech Universe",
+
+  "short_name": "Bhimavarappadu",
+
+  "description": "The futuristic tech ecosystem of Bhimavarappadu.",
+
+  "start_url": "/bhimavarappadu521229/",
+
+  "scope": "/bhimavarappadu521229/",
+
+  "display": "standalone",
+
+  "orientation": "portrait",
+
+  "background_color": "#07111f",
+
+  "theme_color": "#07111f",
+
+  "lang": "en",
+
+  "dir": "ltr",
+
+  "categories": [
+
+    "education",
+    "lifestyle",
+    "shopping",
+    "social"
+
+  ],
+
+  "icons": [
+
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+
+  ],
+
+  "screenshots": [
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Bhimavarappadu Tech Universe"
+    }
+
+  ]
+}

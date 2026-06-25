@@ -1,0 +1,62 @@
+{
+  "name": "RamayanaKandrika Tech Universe",
+
+  "short_name": "RamayanaKandrika",
+
+  "description": "The futuristic tech ecosystem of RamayanaKandrika.",
+
+  "start_url": "/ramayanakandrika523240/",
+
+  "scope": "/ramayanakandrika523240/",
+
+  "display": "standalone",
+
+  "orientation": "portrait",
+
+  "background_color": "#07111f",
+
+  "theme_color": "#07111f",
+
+  "lang": "en",
+
+  "dir": "ltr",
+
+  "categories": [
+
+    "education",
+    "lifestyle",
+    "shopping",
+    "social"
+
+  ],
+
+  "icons": [
+
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+
+  ],
+
+  "screenshots": [
+
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "RamayanaKandrika Tech Universe"
+    }
+
+  ]
+}
