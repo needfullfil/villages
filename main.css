@@ -1,0 +1,1638 @@
+/* =========================================
+   ROOT
+========================================= */
+
+:root {
+
+  --bg:
+    #07111f;
+
+  --bg2:
+    #0d1730;
+
+  --bg3:
+    #172445;
+
+  --text:
+    #eef4ff;
+
+  --muted:
+    rgba(238,244,255,0.70);
+
+  --blue1:
+    #4fdcff;
+
+  --blue2:
+    #4f8cff;
+
+  --cyan:
+    #7defff;
+
+  --purple:
+    #9d7dff;
+
+  --green:
+    #5dd39e;
+
+  --glass:
+    rgba(255,255,255,0.06);
+
+  --glassBorder:
+    rgba(255,255,255,0.08);
+
+  --radius:
+    34px;
+
+}
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+
+  margin:
+    0;
+
+  padding:
+    0;
+
+  box-sizing:
+    border-box;
+
+  -webkit-tap-highlight-color:
+    transparent;
+
+}
+
+html {
+
+  width:
+    100%;
+
+  min-height:
+    100%;
+
+  scroll-behavior:
+    auto;
+
+  overflow-x:
+    hidden;
+
+}
+
+body {
+
+  width:
+    100%;
+
+  min-height:
+    100vh;
+
+  overflow-x:
+    hidden;
+
+  color:
+    var(--text);
+
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+
+  background:
+
+    radial-gradient(
+      circle at top left,
+      rgba(79,140,255,0.22),
+      transparent 28%
+    ),
+
+    radial-gradient(
+      circle at top right,
+      rgba(125,239,255,0.14),
+      transparent 32%
+    ),
+
+    radial-gradient(
+      circle at bottom left,
+      rgba(157,125,255,0.12),
+      transparent 34%
+    ),
+
+    linear-gradient(
+      180deg,
+      var(--bg) 0%,
+      var(--bg2) 55%,
+      var(--bg3) 100%
+    );
+
+  -webkit-font-smoothing:
+    antialiased;
+
+  text-rendering:
+    optimizeLegibility;
+
+  position:
+    relative;
+
+}
+
+
+/* =========================================
+   APP
+========================================= */
+
+#app {
+
+  width:
+    100%;
+
+  min-height:
+    100vh;
+
+  padding:
+    max(24px, env(safe-area-inset-top))
+    18px
+    max(120px, env(safe-area-inset-bottom));
+
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.heroSection {
+
+  width:
+    100%;
+
+  max-width:
+    1280px;
+
+  margin:
+    0 auto;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    42px;
+
+  padding:
+    42px 0 70px;
+
+}
+
+.heroLogoWrap {
+
+  width:
+    220px;
+
+  height:
+    220px;
+
+  border-radius:
+    48px;
+
+  background:
+
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.08),
+      rgba(255,255,255,0.04)
+    );
+
+  border:
+    1px solid var(--glassBorder);
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  backdrop-filter:
+    blur(6px);
+
+  box-shadow:
+
+    0 22px 80px rgba(0,0,0,0.30),
+
+    0 0 60px rgba(79,220,255,0.10);
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+}
+
+.heroLogoWrap::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  background:
+
+    radial-gradient(
+      circle at top,
+      rgba(125,239,255,0.14),
+      transparent 45%
+    );
+
+}
+
+.heroLogo {
+
+  width:
+    78%;
+
+  height:
+    78%;
+
+  object-fit:
+    contain;
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+}
+
+.heroContent {
+
+  flex:
+    1;
+
+}
+
+.heroBadge {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  padding:
+    12px 20px;
+
+  border-radius:
+    999px;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  font-size:
+    0.82rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.14em;
+
+  margin-bottom:
+    24px;
+
+  color:
+    var(--cyan);
+
+}
+
+.heroContent h1 {
+
+  font-size:
+    clamp(
+      2.8rem,
+      7vw,
+      5.5rem
+    );
+
+  line-height:
+    1.05;
+
+  letter-spacing:
+    -0.05em;
+
+  font-weight:
+    900;
+
+  max-width:
+    860px;
+
+}
+
+.heroText {
+
+  margin-top:
+    28px;
+
+  max-width:
+    760px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    1.12rem;
+
+  line-height:
+    2.1;
+
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.sectionBlock {
+
+  width:
+    100%;
+
+  max-width:
+    1280px;
+
+  margin:
+    0 auto 70px;
+
+}
+
+.sectionTitleWrap {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  margin-bottom:
+    26px;
+
+}
+
+.sectionTitleWrap h2 {
+
+  font-size:
+    1.8rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    -0.03em;
+
+}
+
+/* =========================================
+   FEATURED CARD
+========================================= */
+
+.featuredCard {
+
+  position:
+    relative;
+
+  display:
+    flex;
+
+  gap:
+    34px;
+
+  align-items:
+    center;
+
+  overflow:
+    hidden;
+
+  border-radius:
+    42px;
+
+  padding:
+    36px;
+
+
+
+  background:
+
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.08),
+      rgba(255,255,255,0.04)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:
+    blur(6px);
+
+  transition:
+    0.24s ease;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.20);
+
+}
+
+.featuredCard:hover {
+
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(125,239,255,0.20);
+
+}
+
+.featuredGlow {
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  background:
+
+    radial-gradient(
+      circle at top right,
+      rgba(79,220,255,0.14),
+      transparent 42%
+    );
+
+  pointer-events:
+    none;
+
+}
+
+.featuredImageWrap {
+
+  width:
+    210px;
+
+  height:
+    210px;
+
+  flex-shrink:
+    0;
+
+  border-radius:
+    40px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+}
+
+.featuredImageWrap img {
+
+  width:
+    80%;
+
+  height:
+    80%;
+
+  object-fit:
+    contain;
+
+}
+
+.featuredContent {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+}
+
+.featuredBadge {
+
+  display:
+    inline-flex;
+
+  padding:
+    10px 18px;
+
+  border-radius:
+    999px;
+
+  background:
+    rgba(79,220,255,0.12);
+
+  border:
+    1px solid rgba(79,220,255,0.14);
+
+  color:
+    var(--cyan);
+
+  font-size:
+    0.76rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.12em;
+
+  margin-bottom:
+    18px;
+
+}
+
+.featuredContent h3 {
+
+  font-size:
+    3rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    -0.04em;
+
+  margin-bottom:
+    18px;
+
+}
+
+.featuredContent p {
+
+  max-width:
+    700px;
+
+  line-height:
+    2.1;
+
+  color:
+    var(--muted);
+
+  font-size:
+    1.05rem;
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.cardButtons {
+
+  display:
+    flex;
+
+  gap:
+    14px;
+
+  margin-top:
+    28px;
+
+  flex-wrap:
+    wrap;
+
+}
+
+.launchButton,
+.installFeaturedBtn,
+.openCardBtn,
+.installCardBtn {
+
+  border:
+    none;
+
+  outline:
+    none;
+
+  cursor:
+    pointer;
+
+  border-radius:
+    999px;
+
+  padding:
+    16px 26px;
+
+  font-weight:
+    800;
+
+  transition:
+    0.22s ease;
+
+}
+
+.launchButton,
+.installFeaturedBtn,
+.installCardBtn {
+
+  background:
+
+    linear-gradient(
+      135deg,
+      var(--blue1),
+      var(--blue2)
+    );
+
+  color:
+    white;
+
+  box-shadow:
+    0 16px 40px rgba(79,140,255,0.24);
+
+}
+
+.openCardBtn {
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  color:
+    white;
+
+}
+
+.launchButton:hover,
+.installFeaturedBtn:hover,
+.openCardBtn:hover,
+.installCardBtn:hover {
+
+  transform:
+    translateY(-3px);
+
+}
+
+/* =========================================
+   APPS GRID
+========================================= */
+
+#appsGrid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+
+  gap:
+    24px;
+
+}
+
+
+
+/* =========================================
+   GOVERNMENT SERVICES
+========================================= */
+
+#governmentGrid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+
+  gap:
+    24px;
+
+}
+
+/* =========================================
+   TOLL FREE NUMBERS
+========================================= */
+
+#tollGrid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+
+  gap:
+    24px;
+
+}
+
+/* =========================================
+   APP CARD
+========================================= */
+
+.appCard {
+
+  cursor:
+    pointer;
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  border-radius:
+    34px;
+
+  padding:
+    28px;
+
+
+
+  background:
+
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.07),
+      rgba(255,255,255,0.045)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:
+    blur(6px);
+
+  transition:
+    0.24s ease;
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.18);
+
+}
+
+.appCard:hover {
+
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(125,239,255,0.18);
+
+}
+
+.appCardGlow {
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  background:
+
+    radial-gradient(
+      circle at top right,
+      rgba(79,220,255,0.10),
+      transparent 44%
+    );
+
+  pointer-events:
+    none;
+
+}
+
+.appIcon {
+
+  width:
+    96px;
+
+  height:
+    96px;
+
+  object-fit:
+    contain;
+
+  margin-bottom:
+    24px;
+
+  position:
+    relative;
+
+
+  z-index:
+    2;
+
+}
+
+.appInfo {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+}
+
+.appTag {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    8px 16px;
+
+  border-radius:
+    999px;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.12em;
+
+  margin-bottom:
+    18px;
+
+  color:
+    var(--cyan);
+
+}
+
+.appInfo h3 {
+
+  font-size:
+    1.7rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    -0.03em;
+
+  margin-bottom:
+    14px;
+
+}
+
+.appInfo p {
+
+  line-height:
+    2;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.98rem;
+
+}
+
+/* =========================================
+   NOTIFICATIONS
+========================================= */
+
+#notificationsFeed {
+
+  display:
+    grid;
+
+  gap:
+    20px;
+
+}
+
+.notificationCard {
+
+  cursor:
+    pointer;
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  border-radius:
+    28px;
+
+  padding:
+    24px;
+
+
+
+  background:
+
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.07),
+      rgba(255,255,255,0.045)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:
+    blur(6px);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.16);
+
+  transition:
+    all .25s ease;
+
+}
+
+.notificationCard:hover {
+
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(125,239,255,0.22);
+
+  box-shadow:
+    0 24px 60px rgba(0,0,0,0.28);
+
+}
+
+.notificationCard:active {
+
+  transform:
+    scale(0.98);
+
+}
+
+.notificationGlow {
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  background:
+
+    radial-gradient(
+      circle at top right,
+      rgba(79,220,255,0.08),
+      transparent 44%
+    );
+
+}
+
+.notificationTop {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  margin-bottom:
+    16px;
+
+}
+
+.notificationBadge {
+
+  padding:
+    8px 14px;
+
+  border-radius:
+    999px;
+
+  background:
+    rgba(79,220,255,0.12);
+
+  border:
+    1px solid rgba(79,220,255,0.14);
+
+  color:
+    var(--cyan);
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.12em;
+
+}
+
+.notificationTime {
+
+  color:
+    rgba(255,255,255,0.45);
+
+  font-size:
+    0.82rem;
+
+  font-weight:
+    700;
+
+}
+
+.notificationCard h3 {
+
+  font-size:
+    1.25rem;
+
+  font-weight:
+    900;
+
+  margin-bottom:
+    12px;
+
+}
+
+.notificationCard p {
+
+  line-height:
+    1.9;
+
+  color:
+    var(--muted);
+
+}
+
+/* =========================================
+   WHATSAPP SECTION
+========================================= */
+
+.whatsappSection{
+
+  width:100%;
+
+  max-width:1280px;
+
+  margin:0 auto 70px;
+
+}
+
+.whatsappCard{
+
+  position:relative;
+
+  overflow:hidden;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:24px;
+
+  padding:32px;
+
+  border-radius:34px;
+
+  background:
+
+    linear-gradient(
+
+      180deg,
+
+      rgba(255,255,255,0.08),
+
+      rgba(255,255,255,0.04)
+
+    );
+
+  border:
+
+    1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(6px);
+
+  box-shadow:
+
+    0 12px 30px rgba(0,0,0,0.20);
+
+}
+
+.whatsappCard:hover{
+
+  border-color:
+
+    rgba(37,211,102,.35);
+
+}
+
+.whatsappGlow{
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    radial-gradient(
+
+      circle at top right,
+
+      rgba(37,211,102,.18),
+
+      transparent 45%
+
+    );
+
+  pointer-events:none;
+
+}
+
+.whatsappIcon{
+
+  width:82px;
+
+  height:82px;
+
+  min-width:82px;
+
+  border-radius:50%;
+
+  background:#25D366;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  box-shadow:
+
+    0 12px 28px
+
+    rgba(37,211,102,.35);
+
+  z-index:2;
+
+}
+
+.whatsappIcon svg{
+
+  width:42px;
+
+  height:42px;
+
+}
+
+.whatsappText{
+
+  flex:1;
+
+  z-index:2;
+
+}
+
+.whatsappText h3{
+
+  font-size:1.8rem;
+
+  font-weight:900;
+
+  margin-bottom:16px;
+
+  letter-spacing:-0.03em;
+
+}
+
+.whatsappText p{
+
+  color:var(--muted);
+
+  font-size:1rem;
+
+  line-height:2;
+
+}
+
+.whatsappBtn{
+
+  z-index:2;
+
+  text-decoration:none;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:16px 24px;
+
+  border-radius:999px;
+
+  background:
+
+    linear-gradient(
+
+      135deg,
+
+      #25D366,
+
+      #1ebc57
+
+    );
+
+  color:#fff;
+
+  font-weight:800;
+
+  white-space:nowrap;
+
+  transition:.25s ease;
+
+  box-shadow:
+
+    0 12px 28px
+
+    rgba(37,211,102,.25);
+
+}
+
+.whatsappBtn:hover{
+
+  transform:
+
+    translateY(-3px);
+
+}
+
+.whatsappBtn:active{
+
+  transform:
+
+    scale(.98);
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  .whatsappCard{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:26px;
+
+  }
+
+  .whatsappIcon{
+
+    width:72px;
+
+    height:72px;
+
+    min-width:72px;
+
+  }
+
+  .whatsappIcon svg{
+
+    width:36px;
+
+    height:36px;
+
+  }
+
+  .whatsappText h3{
+
+    font-size:1.45rem;
+
+  }
+
+  .whatsappBtn{
+
+    width:100%;
+
+  }
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+#footer {
+
+  width:
+    100%;
+
+  max-width:
+    1280px;
+
+  margin:
+    0 auto;
+
+  padding:
+    10px 0 40px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    18px;
+
+}
+
+.footerLogo {
+
+  width:
+    72px;
+
+  height:
+    72px;
+
+  object-fit:
+    contain;
+
+  opacity:
+    0.9;
+
+}
+
+#footer p {
+
+  color:
+    rgba(238,244,255,0.54);
+
+  text-align:
+    center;
+
+  font-size:
+    0.95rem;
+
+}
+
+/* =========================================
+   INSTALL BUTTON
+========================================= */
+
+#installBtn {
+
+  position:
+    fixed;
+
+  right:
+    18px;
+
+  bottom:
+    max(
+      18px,
+      env(safe-area-inset-bottom)
+    );
+
+  z-index:
+    999999;
+
+  border:
+    none;
+
+  outline:
+    none;
+
+  cursor:
+    pointer;
+
+  border-radius:
+    999px;
+
+  padding:
+    16px 24px;
+
+  background:
+
+    linear-gradient(
+      135deg,
+      var(--blue1),
+      var(--blue2)
+    );
+
+  color:
+    white;
+
+  font-size:
+    0.95rem;
+
+  font-weight:
+    800;
+
+  box-shadow:
+    0 16px 40px rgba(79,140,255,0.24);
+
+  backdrop-filter:
+    blur(6px);
+
+  opacity:
+    0;
+
+  visibility:
+    hidden;
+
+  transform:
+    translateY(20px);
+
+  transition:
+    0.22s ease;
+
+}
+
+#installBtn.showInstall {
+
+  opacity:
+    1;
+
+  visibility:
+    visible;
+
+  transform:
+    translateY(0);
+
+}
+
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .heroSection {
+
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+
+    padding:
+      24px 0 60px;
+
+  }
+
+  .heroLogoWrap {
+
+    width:
+      170px;
+
+    height:
+      170px;
+
+    border-radius:
+      38px;
+
+  }
+
+  .featuredCard {
+
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+
+  }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+
+  #app {
+
+    padding:
+      max(18px, env(safe-area-inset-top))
+      14px
+      max(120px, env(safe-area-inset-bottom));
+
+  }
+
+  .appCard {
+
+    border-radius:
+      28px;
+
+    padding:
+      22px;
+
+  }
+
+  .featuredCard {
+
+    border-radius:
+      32px;
+
+    padding:
+      24px;
+
+  }
+
+  .featuredContent h3 {
+
+    font-size:
+      2rem;
+
+  }
+
+  .cardButtons {
+
+    flex-direction:
+      column;
+
+  }
+
+  .launchButton,
+  .installFeaturedBtn,
+  .openCardBtn,
+  .installCardBtn {
+
+    width:
+      100%;
+
+  }
+
+}
