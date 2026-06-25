@@ -1,0 +1,77 @@
+name: Generate AP Villages
+
+on:
+  push:
+    paths:
+      - "ap.json"
+      - ".github/workflows/generate-apvillages.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate apvillages.json
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
+
+          const data = JSON.parse(fs.readFileSync('ap.json', 'utf8'));
+
+          const output = [];
+
+          if (data.districts) {
+            for (const district of Object.values(data.districts)) {
+              if (!district.subdistricts) continue;
+
+              for (const mandal of Object.values(district.subdistricts)) {
+                if (!Array.isArray(mandal.villages)) continue;
+
+                for (const village of mandal.villages) {
+                  if (!village.name || !village.pincode) continue;
+
+                  output.push({
+                    n: village.name,
+                    p: String(village.pincode)
+                  });
+                }
+              }
+            }
+          }
+
+          output.sort((a, b) => a.n.localeCompare(b.n));
+
+          fs.writeFileSync(
+            'apvillages.json',
+            JSON.stringify(output)
+          );
+
+          console.log(`Generated ${output.length} villages.`);
+          EOF
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add apvillages.json
+          git commit -m "Auto generate apvillages.json"
+          git push
