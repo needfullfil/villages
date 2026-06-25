@@ -1,10 +1,6 @@
 name: Generate AP Villages
 
 on:
-  push:
-    paths:
-      - "ap.json"
-      - ".github/workflows/generate-apvillages.yml"
 
   workflow_dispatch:
 
