@@ -1,5 +1,15 @@
 [
   {
+    "id": "vidhai",
+    "name": "VidhAI",
+    "category": "AI SERVICES",
+    "badge": "OUR AI TEAM",
+    "description": "Bring your ideas to life with our AI team. Submit your project requirements and budget to receive custom AI solutions, business automation, websites, mobile apps and software development tailored to your needs.",
+    "url": "https://vidhai.vidhwaan.com",
+    "icon": "https://vidhai.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+  {
     "id": "kidlab",
     "name": "KidLab",
     "category": "SCIENCE",
