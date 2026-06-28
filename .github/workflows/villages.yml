@@ -10,6 +10,7 @@ on:
     paths:
       - apvillages.json
       - template.html
+      - market.html
       - manifest.json
       - sw.js
       - apps.json
@@ -50,6 +51,12 @@ jobs:
           const htmlTemplate =
             fs.readFileSync(
               "template.html",
+              "utf8"
+            );
+            
+          const htmlTemplate =
+            fs.readFileSync(
+              "market.html",
               "utf8"
             );
 
@@ -143,6 +150,8 @@ jobs:
             "icons",
 
             "template.html",
+
+            "market.html",           
 
             "manifest.json",
 
@@ -238,6 +247,17 @@ jobs:
                 folder
 
               )
+
+            );
+
+            fs.writeFileSync(
+
+              path.join(
+                dir,
+                "market.html"
+              ),
+
+              marketTemplate
 
             );
 
