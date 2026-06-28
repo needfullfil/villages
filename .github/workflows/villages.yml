@@ -54,7 +54,7 @@ jobs:
               "utf8"
             );
             
-          const htmlTemplate =
+          const marketTemplate =
             fs.readFileSync(
               "market.html",
               "utf8"
