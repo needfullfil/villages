@@ -39,6 +39,18 @@
     "icon": "https://gita.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
+
+  {
+    "id": "bbfccl",
+    "name": "BBF CCL",
+    "category": "SPORTS",
+    "badge": "CIRCLE CRICKET LEAGUE",
+    "description": "Official BBF Circle Cricket League platform. Create your player card, register as a player, explore Circle 6 (C6) and Circle 12 (C12) formats, and become part of a new village-born sport built for the world.",
+    "url": "https://bbfccl.vidhwaan.com/",
+    "icon": "https://bbfccl.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+  
   {
     "id": "zero",
     "name": "Zero App",
