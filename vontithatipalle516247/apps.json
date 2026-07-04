@@ -50,6 +50,16 @@
     "icon": "https://bbfccl.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
+  {
+    "id": "vidhwaan-time",
+    "name": "VIDHWAAN Time",
+    "category": "TIME",
+    "badge": "NEXT GENERATION TIME",
+    "description": "Experience the VIDHWAAN Time System through a beautifully crafted analog and digital clock. Discover a new way of understanding time with a premium, real-time clock designed for everyday life and future smart devices.",
+    "url": "https://time.vidhwaan.com",
+    "icon": "https://time.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
   
   {
     "id": "zero",
