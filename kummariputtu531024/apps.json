@@ -19,6 +19,29 @@
     "icon": "https://villagekidlab.vidhwaan.com/icons/logo2.png",
     "featured": false
   },
+
+  {
+    "id": "ai-writer",
+    "name": "VIDHWAAN AI Writer",
+    "category": "AI SERVICES",
+    "badge": "AI CONTENT CREATION",
+    "description": "Create professional blogs, articles, social media posts, emails and business content with AI. VIDHWAAN AI Writer helps students, creators, professionals and businesses generate high-quality content with a simple and intelligent writing experience.",
+    "url": "https://writer.vidhwaan.com",
+    "icon": "https://writer.vidhwaan.com/assets/icons/icon-512.png",
+    "featured": false
+  },
+
+  {
+    "id": "vidhwaan-news",
+    "name": "VIDHWAAN Telugu News",
+    "category": "NEWS",
+    "badge": "AI POWERED TELUGU NEWS",
+    "description": "Stay updated with Telugu news from India, world and Andhra Pradesh. Read clean, fast and beautifully presented news stories through the VIDHWAAN News experience.",
+    "url": "https://news.vidhwaan.com",
+    "icon": "https://news.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+  
   {
     "id": "billwaan",
     "name": "Billwaan App",
@@ -41,15 +64,16 @@
   },
 
   {
-    "id": "bbfccl",
-    "name": "BBF CCL",
+    "id": "ccl",
+    "name": "CCL",
     "category": "SPORTS",
     "badge": "CIRCLE CRICKET LEAGUE",
-    "description": "Official BBF Circle Cricket League platform. Create your player card, register as a player, explore Circle 6 (C6) and Circle 12 (C12) formats, and become part of a new village-born sport built for the world.",
-    "url": "https://bbfccl.vidhwaan.com/",
-    "icon": "https://bbfccl.vidhwaan.com/icons/icon-512.png",
+    "description": "Official Circle Cricket League platform. Create your player card, register as a player, explore Circle 6 (C6) and Circle 12 (C12) formats, and become part of a new village-born sport built for the world.",
+    "url": "https://ccl.vidhwaan.com/",
+    "icon": "https://ccl.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
+  
   {
     "id": "vidhwaan-time",
     "name": "VIDHWAAN Time",
