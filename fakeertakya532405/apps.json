@@ -2,52 +2,69 @@
   {
     "id": "vidhai",
     "name": "VidhAI",
-    "category": "AI SERVICES",
-    "badge": "OUR AI TEAM",
-    "description": "Bring your ideas to life with our AI team. Submit your project requirements and budget to receive custom AI solutions, business automation, websites, mobile apps and software development tailored to your needs.",
+    "category": "ఏఐ సేవలు",
+    "badge": "మన ఏఐ బృందం",
+    "description": "మీ ఆలోచనలను నిజమైన ప్రాజెక్టులుగా మార్చేందుకు మా ఏఐ బృందం సహాయం చేస్తుంది. మీ ప్రాజెక్ట్ అవసరాలు మరియు బడ్జెట్‌ను పంపండి. మీ అవసరానికి సరిపోయే ఏఐ పరిష్కారాలు, వ్యాపార ఆటోమేషన్, వెబ్‌సైట్లు, మొబైల్ యాప్‌లు మరియు సాఫ్ట్‌వేర్ అభివృద్ధి సేవలను పొందండి.",
     "url": "https://vidhai.vidhwaan.com",
     "icon": "https://vidhai.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
   {
-    "id": "kidlab",
-    "name": "KidLab",
-    "category": "SCIENCE",
-    "badge": "INTERNATIONAL SCIENCE APP",
-    "description": "Interactive science learning missions, futuristic quizzes, visual explanations and game-like educational experiences for students.",
-    "url": "https://villagekidlab.vidhwaan.com",
-    "icon": "https://villagekidlab.vidhwaan.com/icons/logo2.png",
+    "id": "aividhya",
+    "name": "AIVidhya",
+    "category": "విద్య",
+    "badge": "365 రోజుల ఏఐ అభ్యాసం",
+    "description": "కృత్రిమ మేధస్సు (AI)ను 365 రోజుల క్రమబద్ధమైన అభ్యాస ప్రయాణంలో నేర్చుకోండి. ప్రతిరోజూ ఒక ఏఐ పాఠం, సులభమైన వివరణలు, ఆచరణాత్మక ఉదాహరణలు, అభ్యాసం మరియు బహుళైచ్ఛిక ప్రశ్నలతో ప్రాథమిక అంశాల నుంచి అధునాతన అంశాల వరకు నేర్చుకోండి.",
+    "url": "https://aividhya.vidhwaan.com",
+    "icon": "https://aividhya.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
-
+  {
+    "id": "neet",
+    "name": "VIDHWAAN NEET",
+    "category": "విద్య",
+    "badge": "365 రోజుల NEET సిద్ధత",
+    "description": "NEET పరీక్ష కోసం 365 రోజుల పూర్తి స్థాయి సిద్ధత ప్రయాణం. ప్రతి రోజూ ఒక కొత్త పాఠం ద్వారా NEET సిలబస్‌లోని ముఖ్యమైన భావనలు, అంశాలు, వివరణలు, అభ్యాస ప్రశ్నలు, బహుళైచ్ఛిక ప్రశ్నలు, సమాధానాలు మరియు వాటి వివరణలను క్రమబద్ధంగా నేర్చుకోండి. రోజువారీ అభ్యాసం మరియు సాధన ద్వారా మీ NEET సిద్ధతను బలోపేతం చేసుకుని, పరీక్షకు అవసరమైన జ్ఞానం మరియు సమస్యలను పరిష్కరించే నైపుణ్యాలను 365 రోజుల పాటు దశలవారీగా అభివృద్ధి చేసుకోండి. ప్రతిరోజూ ఉదయం 6:00 గంటలకు (IST) కొత్త రోజు పాఠ్యాంశం అందుబాటులోకి వస్తుంది.",
+    "url": "https://neet.vidhwaan.com",
+    "icon": "https://neet.vidhwaan.com/icons/logo.png",
+    "featured": false
+  },
   {
     "id": "ai-writer",
     "name": "VIDHWAAN AI Writer",
-    "category": "AI SERVICES",
-    "badge": "AI CONTENT CREATION",
-    "description": "Create professional blogs, articles, social media posts, emails and business content with AI. VIDHWAAN AI Writer helps students, creators, professionals and businesses generate high-quality content with a simple and intelligent writing experience.",
+    "category": "ఏఐ సేవలు",
+    "badge": "ఏఐతో కంటెంట్ తయారీ",
+    "description": "ఏఐ సహాయంతో ప్రొఫెషనల్ బ్లాగులు, వ్యాసాలు, సోషల్ మీడియా పోస్టులు, ఇమెయిల్స్ మరియు వ్యాపార కంటెంట్‌ను రూపొందించండి. విద్యార్థులు, కంటెంట్ క్రియేటర్లు, నిపుణులు మరియు వ్యాపారాలకు సులభమైన, తెలివైన రైటింగ్ అనుభవాన్ని అందిస్తుంది.",
     "url": "https://writer.vidhwaan.com",
     "icon": "https://writer.vidhwaan.com/assets/icons/icon-512.png",
     "featured": false
   },
-
   {
     "id": "vidhwaan-news",
     "name": "VIDHWAAN Telugu News",
-    "category": "NEWS",
-    "badge": "AI POWERED TELUGU NEWS",
-    "description": "Stay updated with Telugu news from India, world and Andhra Pradesh. Read clean, fast and beautifully presented news stories through the VIDHWAAN News experience.",
+    "category": "వార్తలు",
+    "badge": "ఏఐ ఆధారిత తెలుగు వార్తలు",
+    "description": "భారతదేశం, ప్రపంచం మరియు ఆంధ్రప్రదేశ్‌కు సంబంధించిన తాజా తెలుగు వార్తలను తెలుసుకోండి. శుభ్రంగా, వేగంగా మరియు అందంగా అందించే వార్తా కథనాలను VIDHWAAN News ద్వారా చదవండి.",
     "url": "https://news.vidhwaan.com",
     "icon": "https://news.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
-  
+  {
+    "id": "kidlab",
+    "name": "KidLab",
+    "category": "విజ్ఞానం",
+    "badge": "అంతర్జాతీయ విజ్ఞాన యాప్",
+    "description": "విద్యార్థుల కోసం ఇంటరాక్టివ్ విజ్ఞాన అభ్యాస మిషన్లు, భవిష్యత్ క్విజ్‌లు, దృశ్య వివరణలు మరియు ఆటలా అనిపించే విద్యా అనుభవాలు.",
+    "url": "https://villagekidlab.vidhwaan.com",
+    "icon": "https://villagekidlab.vidhwaan.com/icons/logo2.png",
+    "featured": false
+  },
   {
     "id": "billwaan",
     "name": "Billwaan App",
-    "category": "BUSINESS",
-    "badge": "BILLING & INVOICES",
-    "description": "Create professional Bills, Invoices, Estimates, Quotations, Receipts and Proforma Invoices with beautiful PDF export, print and share features. Perfect for businesses, shops, freelancers and professionals.",
+    "category": "వ్యాపారం",
+    "badge": "బిల్లులు & ఇన్వాయిస్‌లు",
+    "description": "బిల్లులు, ఇన్వాయిస్‌లు, అంచనా పత్రాలు, కోటేషన్లు, రసీదులు మరియు ప్రొఫార్మా ఇన్వాయిస్‌లను రూపొందించండి. అందమైన PDFగా సేవ్ చేయడం, ప్రింట్ చేయడం మరియు షేర్ చేయడం చేయవచ్చు. వ్యాపారాలు, దుకాణాలు, ఫ్రీలాన్సర్లు మరియు నిపుణులకు అనుకూలం.",
     "url": "https://bill.vidhwaan.com",
     "icon": "https://bill.vidhwaan.com/icons/icon-512.png",
     "featured": false
@@ -55,42 +72,39 @@
   {
     "id": "gita",
     "name": "Bhagavad Gita",
-    "category": "SPIRITUAL",
-    "badge": "SPIRITUAL EXPERIENCE",
-    "description": "Daily spiritual wisdom, Bhagavad Gita learning and peaceful life guidance experience.",
+    "category": "ఆధ్యాత్మికం",
+    "badge": "ఆధ్యాత్మిక అనుభవం",
+    "description": "ప్రతిరోజూ ఆధ్యాత్మిక జ్ఞానం, భగవద్గీత అభ్యాసం మరియు ప్రశాంతమైన జీవితం కోసం మార్గదర్శక అనుభవం.",
     "url": "https://gita.vidhwaan.com",
     "icon": "https://gita.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
-
   {
     "id": "ccl",
     "name": "CCL",
-    "category": "SPORTS",
-    "badge": "CIRCLE CRICKET LEAGUE",
-    "description": "Official Circle Cricket League platform. Create your player card, register as a player, explore Circle 6 (C6) and Circle 12 (C12) formats, and become part of a new village-born sport built for the world.",
+    "category": "క్రీడలు",
+    "badge": "సర్కిల్ క్రికెట్ లీగ్",
+    "description": "అధికారిక సర్కిల్ క్రికెట్ లీగ్ వేదిక. మీ ప్లేయర్ కార్డ్‌ను రూపొందించండి, ప్లేయర్‌గా నమోదు చేసుకోండి, Circle 6 (C6) మరియు Circle 12 (C12) ఫార్మాట్‌లను తెలుసుకోండి. గ్రామం నుంచి పుట్టిన కొత్త క్రీడను ప్రపంచంతో కలిసి ముందుకు తీసుకెళ్లండి.",
     "url": "https://ccl.vidhwaan.com/",
     "icon": "https://ccl.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
-  
   {
     "id": "vidhwaan-time",
     "name": "VIDHWAAN Time",
-    "category": "TIME",
-    "badge": "NEXT GENERATION TIME",
-    "description": "Experience the VIDHWAAN Time System through a beautifully crafted analog and digital clock. Discover a new way of understanding time with a premium, real-time clock designed for everyday life and future smart devices.",
+    "category": "సమయం",
+    "badge": "తరువాతి తరం సమయ వ్యవస్థ",
+    "description": "అందంగా రూపొందించిన అనలాగ్ మరియు డిజిటల్ గడియారం ద్వారా VIDHWAAN Time System‌ను అనుభవించండి. రోజువారీ జీవితం మరియు భవిష్యత్ స్మార్ట్ పరికరాల కోసం రూపొందించిన రియల్-టైమ్ క్లాక్‌తో సమయాన్ని అర్థం చేసుకునే కొత్త విధానాన్ని తెలుసుకోండి.",
     "url": "https://time.vidhwaan.com",
     "icon": "https://time.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
-  
   {
     "id": "zero",
     "name": "Zero App",
-    "category": "SOCIAL",
-    "badge": "REELS & SHORT VIDEOS",
-    "description": "Upload your YouTube Short videos, share your creativity, explore trending reels, and become part of a next-generation social video community.",
+    "category": "సామాజికం",
+    "badge": "రీల్స్ & చిన్న వీడియోలు",
+    "description": "మీ YouTube Short వీడియోలను అప్‌లోడ్ చేయండి, మీ సృజనాత్మకతను పంచుకోండి, ట్రెండింగ్ రీల్స్‌ను చూడండి మరియు కొత్త తరం సోషల్ వీడియో కమ్యూనిటీలో భాగమవండి.",
     "url": "https://zeroapp.vidhwaan.com",
     "icon": "https://zeroapp.vidhwaan.com/icons/icon-512.png",
     "featured": false
@@ -98,9 +112,9 @@
   {
     "id": "quotes",
     "name": "Quotes",
-    "category": "MOTIVATION",
-    "badge": "DAILY INSPIRATION",
-    "description": "Premium quotes, powerful thoughts and motivational daily inspiration ecosystem.",
+    "category": "ప్రేరణ",
+    "badge": "రోజువారీ ప్రేరణ",
+    "description": "అద్భుతమైన సూక్తులు, శక్తివంతమైన ఆలోచనలు మరియు ప్రతిరోజూ ప్రేరణనిచ్చే ప్రీమియం కంటెంట్.",
     "url": "https://quotes.vidhwaan.com",
     "icon": "https://quotes.vidhwaan.com/icons/icon-512.png",
     "featured": false
@@ -108,9 +122,9 @@
   {
     "id": "marketplace",
     "name": "Village Marketplace",
-    "category": "MARKETPLACE",
-    "badge": "VILLAGE COMMERCE",
-    "description": "Village commerce, buying, selling and futuristic local delivery ecosystem.",
+    "category": "గ్రామ మార్కెట్",
+    "badge": "గ్రామ వ్యాపారం",
+    "description": "మీ గ్రామంలో కొనుగోలు, అమ్మకం మరియు స్థానిక డెలివరీ కోసం గ్రామ మార్కెట్ వేదిక. స్థానిక వ్యాపారాన్ని మరియు గ్రామీణ వాణిజ్యాన్ని సులభంగా అనుసంధానించే వ్యవస్థ.",
     "url": "market.html",
     "icon": "https://market.vidhwaan.com/icons/icon-512.png",
     "featured": true
@@ -118,13 +132,14 @@
   {
     "id": "code-notes",
     "name": "Code & Notes",
-    "category": "PRODUCTIVITY",
-    "badge": "STUDENTS & DEVELOPERS",
-    "description": "Write notes, save ideas, practice coding, store code snippets and organize study materials in one place. Perfect for students, developers and lifelong learners.",
+    "category": "ఉత్పాదకత",
+    "badge": "విద్యార్థులు & డెవలపర్లు",
+    "description": "నోట్స్ రాయండి, ఆలోచనలను సేవ్ చేసుకోండి, కోడింగ్ ప్రాక్టీస్ చేయండి, కోడ్ స్నిపెట్లను భద్రపరచండి మరియు చదువుకు సంబంధించిన మెటీరియల్‌ను ఒకే చోట క్రమబద్ధీకరించండి. విద్యార్థులు, డెవలపర్లు మరియు నిరంతరం నేర్చుకునేవారికి అనుకూలం.",
     "url": "https://apps.vidhwaan.com/",
     "icon": "https://utukur.vidhwaan.com/icons/dev.png",
     "featured": false
   },
+
   {
     "id": "mygov",
     "name": "MyGov India",
