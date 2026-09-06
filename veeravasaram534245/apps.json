@@ -9,6 +9,18 @@
     "icon": "https://vidhai.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
+
+  {
+    "id": "online-shop",
+    "name": "Online Shop",
+    "category": "వ్యాపారం",
+    "badge": "మీ వ్యాపారం కోసం",
+    "description": "మీ వ్యాపారం కోసం మీ స్వంత Online Shop కావాలా? మమ్మల్ని సంప్రదించండి. మీ వ్యాపార వివరాలతో Online Shop‌ను సెటప్ చేస్తాము. WhatsApp: 9440246101",
+    "url": "https://market.vidhwaan.com",
+    "icon": "https://market.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },  
+  
   {
     "id": "aividhya",
     "name": "AIVidhya",
@@ -16,7 +28,7 @@
     "badge": "365 రోజుల ఏఐ అభ్యాసం",
     "description": "కృత్రిమ మేధస్సు (AI)ను 365 రోజుల క్రమబద్ధమైన అభ్యాస ప్రయాణంలో నేర్చుకోండి. ప్రతిరోజూ ఒక ఏఐ పాఠం, సులభమైన వివరణలు, ఆచరణాత్మక ఉదాహరణలు, అభ్యాసం మరియు బహుళైచ్ఛిక ప్రశ్నలతో ప్రాథమిక అంశాల నుంచి అధునాతన అంశాల వరకు నేర్చుకోండి.",
     "url": "https://aividhya.vidhwaan.com",
-    "icon": "https://aividhya.vidhwaan.com/icons/icon-512.png",
+    "icon": "https://aividhya.vidhwaan.com/icons/logo.png",
     "featured": false
   },
   {
