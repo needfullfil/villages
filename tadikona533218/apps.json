@@ -132,17 +132,6 @@
     "icon": "https://vidhai.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
-
-  {
-    "id": "online-shop",
-    "name": "Online Shop",
-    "category": "వ్యాపారం",
-    "badge": "మీ వ్యాపారం కోసం",
-    "description": "మీ వ్యాపారం కోసం మీ స్వంత Online Shop కావాలా? మమ్మల్ని సంప్రదించండి. మీ వ్యాపార వివరాలతో Online Shop‌ను సెటప్ చేస్తాము. WhatsApp: 9440246101",
-    "url": "https://market.vidhwaan.com",
-    "icon": "https://market.vidhwaan.com/icons/icon-512.png",
-    "featured": false
-  },  
   
   {
     "id": "ccl",
