@@ -1,1 +1,222 @@
-importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js");const CACHE_NAME="paletipadumacharlavarikhandrika523279-v1";self.addEventListener("install",()=>{self.skipWaiting()}),self.addEventListener("activate",e=>{e.waitUntil(Promise.all([caches.keys().then(e=>Promise.all(e.map(e=>{if(e!==CACHE_NAME)return caches.delete(e)}))),self.clients.claim()]))}),self.addEventListener("fetch",e=>{"GET"===e.request.method&&e.respondWith(fetch(e.request).then(t=>{const n=t.clone();return caches.open(CACHE_NAME).then(t=>{t.put(e.request,n)}),t}).catch(()=>caches.match(e.request)))}),self.addEventListener("message",e=>{e.data&&"SKIP_WAITING"===e.data.type&&self.skipWaiting()}),self.addEventListener("push",e=>{if(!e.data)return;const t=e.data.json();self.registration.showNotification(t.title||"PaletiPadumacharlavariKhandrika",{body:t.body||"",icon:"/icons/icon-192.png",badge:"/icons/icon-192.png",data:t.url||"/paletipadumacharlavarikhandrika523279/"})}),self.addEventListener("notificationclick",e=>{e.notification.close(),e.waitUntil(clients.openWindow(e.notification.data||"/paletipadumacharlavarikhandrika523279/"))}),console.log("PaletiPadumacharlavariKhandrika Service Worker Loaded");
+/* =========================================
+   VIDHWAAN VILLAGE UNIVERSE
+   SERVICE WORKER TEMPLATE
+========================================= */
+
+/*
+CI/CD VARIABLES
+
+PaletiPadumacharlavariKhandrika
+paletipadumacharlavarikhandrika523279
+
+Example
+
+PaletiPadumacharlavariKhandrika   = Utukur
+paletipadumacharlavarikhandrika523279 = utukur524407
+*/
+
+importScripts(
+  "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js"
+);
+
+const CACHE_NAME =
+  "paletipadumacharlavarikhandrika523279-v1";
+
+/* =========================================
+   INSTALL
+========================================= */
+
+self.addEventListener(
+  "install",
+  () => {
+
+    self.skipWaiting();
+
+  }
+);
+
+/* =========================================
+   ACTIVATE
+========================================= */
+
+self.addEventListener(
+  "activate",
+  event => {
+
+    event.waitUntil(
+
+      Promise.all([
+
+        caches.keys()
+          .then(keys =>
+            Promise.all(
+
+              keys.map(key => {
+
+                if (
+                  key !== CACHE_NAME
+                ) {
+
+                  return caches.delete(
+                    key
+                  );
+
+                }
+
+              })
+
+            )
+          ),
+
+        self.clients.claim()
+
+      ])
+
+    );
+
+  }
+);
+
+/* =========================================
+   NETWORK FIRST
+========================================= */
+
+self.addEventListener(
+  "fetch",
+  event => {
+
+    if (
+      event.request.method !==
+      "GET"
+    ) {
+      return;
+    }
+
+    event.respondWith(
+
+      fetch(
+        event.request
+      )
+
+      .then(response => {
+
+        const responseClone =
+          response.clone();
+
+        caches
+          .open(CACHE_NAME)
+          .then(cache => {
+
+            cache.put(
+              event.request,
+              responseClone
+            );
+
+          });
+
+        return response;
+
+      })
+
+      .catch(() => {
+
+        return caches.match(
+          event.request
+        );
+
+      })
+
+    );
+
+  }
+);
+
+/* =========================================
+   SKIP WAITING
+========================================= */
+
+self.addEventListener(
+  "message",
+  event => {
+
+    if (
+
+      event.data &&
+      event.data.type ===
+      "SKIP_WAITING"
+
+    ) {
+
+      self.skipWaiting();
+
+    }
+
+  }
+);
+
+/* =========================================
+   PUSH
+========================================= */
+
+self.addEventListener(
+  "push",
+  event => {
+
+    if (!event.data) {
+      return;
+    }
+
+    const data =
+      event.data.json();
+
+    self.registration.showNotification(
+
+      data.title || "PaletiPadumacharlavariKhandrika",
+
+      {
+        body:
+          data.body || "",
+
+        icon:
+          "/icons/icon-192.png",
+
+        badge:
+          "/icons/icon-192.png",
+
+        data:
+          data.url || "/paletipadumacharlavarikhandrika523279/"
+      }
+
+    );
+
+  }
+);
+
+/* =========================================
+   NOTIFICATION CLICK
+========================================= */
+
+self.addEventListener(
+  "notificationclick",
+  event => {
+
+    event.notification.close();
+
+    event.waitUntil(
+
+      clients.openWindow(
+
+        event.notification.data ||
+
+        "/paletipadumacharlavarikhandrika523279/"
+
+      )
+
+    );
+
+  }
+);
+
+console.log(
+  "PaletiPadumacharlavariKhandrika Service Worker Loaded"
+);
