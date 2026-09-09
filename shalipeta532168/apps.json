@@ -37,7 +37,7 @@
     "name": "VIDHWAAN NEET",
     "category": "విద్య",
     "badge": "365 రోజుల NEET సిద్ధత",
-    "description": "NEET పరీక్ష కోసం 365 రోజుల పూర్తి స్థాయి సిద్ధత ప్రయాణం. ప్రతి రోజూ ఒక కొత్త పాఠం ద్వారా NEET సిలబస్‌లోని ముఖ్యమైన భావనలు, అంశాలు, వివరణలు, అభ్యాస ప్రశ్నలు, బహుళైచ్ఛిక ప్రశ్నలు, సమాధానాలు మరియు వాటి వివరణలను క్రమబద్ధంగా నేర్చుకోండి. రోజువారీ అభ్యాసం మరియు సాధన ద్వారా మీ NEET సిద్ధతను బలోపేతం చేసుకుని, పరీక్షకు అవసరమైన జ్ఞానం మరియు సమస్యలను పరిష్కరించే నైపుణ్యాలను 365 రోజుల పాటు దశలవారీగా అభివృద్ధి చేసుకోండి. ప్రతిరోజూ ఉదయం 6:00 గంటలకు (IST) కొత్త రోజు పాఠ్యాంశం అందుబాటులోకి వస్తుంది.",
+    "description": "సిలబస్‌కు అనుగుణంగా 365 రోజుల NEET ప్రిపరేషన్ యాప్. ప్రతిరోజూ ముఖ్యమైన కాన్సెప్ట్‌లు, వివరణలు మరియు ప్రాక్టీస్ MCQsతో మీ NEET సిద్ధతను బలోపేతం చేసుకోండి.",
     "url": "https://neet.vidhwaan.com",
     "icon": "https://neet.vidhwaan.com/icons/logo.png",
     "featured": false
@@ -130,6 +130,28 @@
     "description": "మీ ఆలోచనలను నిజమైన ప్రాజెక్టులుగా మార్చేందుకు మా ఏఐ బృందం సహాయం చేస్తుంది. మీ ప్రాజెక్ట్ అవసరాలు మరియు బడ్జెట్‌ను పంపండి. మీ అవసరానికి సరిపోయే ఏఐ పరిష్కారాలు, వ్యాపార ఆటోమేషన్, వెబ్‌సైట్లు, మొబైల్ యాప్‌లు మరియు సాఫ్ట్‌వేర్ అభివృద్ధి సేవలను పొందండి.",
     "url": "https://vidhai.vidhwaan.com",
     "icon": "https://vidhai.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+
+  {
+    "id": "one-rupee-website",
+    "name": "Vidhwaan ₹1 Website",
+    "category": "వ్యాపారం",
+    "badge": "ఒక్క రూపాయికే వెబ్‌సైట్",
+    "description": "కేవలం ₹1తో మీ సొంత బేసిక్ వెబ్‌సైట్‌ను క్రియేట్ చేసుకోండి. బిజినెస్‌లు, ఎడ్యుకేటర్లు, స్టూడెంట్స్, క్రియేటర్స్ మరియు ప్రతి ఒక్కరికీ సులభమైన ఆన్‌లైన్ ప్రెజెన్స్. ఎప్పుడైనా మా బేసిక్ ప్రైసింగ్‌తో మీ వెబ్‌సైట్‌ను అప్‌డేట్ చేసుకోండి.",
+    "url": "https://app.vidhwaan.com",
+    "icon": "https://app.vidhwaan.com/icons1/logo.png",
+    "featured": false
+  },
+
+  {
+    "id": "app-store",
+    "name": "VIDHWAAN App Store",
+    "category": "విధ్వాన్ యాప్స్",
+    "badge": "అన్ని విధ్వాన్ యాప్స్ ఒకే చోట",
+    "description": "విధ్వాన్‌లోని అన్ని యాప్స్‌ను ఒకే చోట యాక్సెస్ చేయడానికి అధికారిక యాప్ స్టోర్. మీకు అవసరమైన విధ్వాన్ యాప్‌ను సులభంగా కనుగొని యాక్సెస్ చేసుకోండి.",
+    "url": "https://store.vidhwaan.com",
+    "icon": "https://store.vidhwaan.com/icons/logo.png",
     "featured": false
   },
   
@@ -371,32 +393,10 @@
 
 
 
+
+
   {
     "id": 1,
-    "badge": "SCIENCE",
-    "time": "FEATURED",
-    "title": "KidLab",
-    "description": "Interactive science missions, quizzes, experiments and futuristic learning experiences for students.",
-    "url": "https://villagekidlab.vidhwaan.com"
-  },
-  {
-    "id": 2,
-    "badge": "SPIRITUAL",
-    "time": "POPULAR",
-    "title": "Bhagavad Gita",
-    "description": "Reel-style Bhagavad Gita learning experience with timeless wisdom and daily spiritual guidance.",
-    "url": "https://gita.vidhwaan.com"
-  },
-  {
-    "id": 3,
-    "badge": "QUOTES",
-    "time": "TRENDING",
-    "title": "Quotes",
-    "description": "Thousands of motivational, inspirational and life-changing quotes in a premium reading experience.",
-    "url": "https://quotes.vidhwaan.com"
-  },
-  {
-    "id": 4,
     "badge": "AI ECOSYSTEM",
     "time": "FLAGSHIP",
     "title": "Vidhwaan AI",
@@ -404,7 +404,7 @@
     "url": "https://ai.vidhwaan.com"
   },
   {
-    "id": 5,
+    "id": 2,
     "badge": "AI SERVICES",
     "time": "SMART AUTOMATION",
     "title": "VidhAI",
@@ -412,63 +412,42 @@
     "url": "https://vidhai.vidhwaan.com"
   },
   {
-    "id": 6,
+    "id": 3,
     "badge": "MARKETPLACE",
-    "time": "COMING SOON",
-    "title": "Village Marketplace",
+    "time": "Market",
+    "title": "Online Shop",
     "description": "Digital commerce platform connecting local products, services and village businesses through a modern village-first marketplace ecosystem.",
     "url": "https://market.vidhwaan.com"
   },
   {
-    "id": 7,
+    "id": 4,
     "badge": "FOUNDATION",
     "time": "SOCIAL IMPACT",
     "title": "Foundation",
     "description": "Technology-driven social initiatives focused on accessibility, education, inclusion and community empowerment.",
     "url": "https://foundation.vidhwaan.com"
   },
+
   {
-    "id": 8,
-    "badge": "BUSINESS",
-    "time": "PRO",
-    "title": "Website + App",
-    "description": "Affordable digital presence with professional website and app solutions designed for businesses, startups and local entrepreneurs.",
-    "url": "https://app.vidhwaan.com"
-  },
-  {
-    "id": 9,
+    "id": 5,
     "badge": "SKILLS",
     "time": "COMMUNITY",
     "title": "Skills & Livelihood",
     "description": "Skill development, practical learning, employment support and livelihood opportunities for a stronger future.",
     "url": "https://earn.vidhwaan.com"
   },
+
   {
-    "id": 10,
-    "badge": "DEVELOPER SUITE",
-    "time": "EXPANDING",
-    "title": "Vidhwaan Apps Platform",
-    "description": "Developer and productivity workspace featuring VidCode, VidWord, project tools, note management, cloud storage and future AI-powered utilities in one ecosystem.",
-    "url": "https://apps.vidhwaan.com"
-  },
-  {
-    "id": 11,
+    "id": 6,
     "badge": "TECHNOLOGY",
     "time": "GLOBAL",
     "title": "Vidhwaan Technologies",
     "description": "Modern digital infrastructure, automation systems, cloud-native platforms and scalable software solutions built for startups, enterprises and communities worldwide.",
     "url": "https://tech.vidhwaan.com"
   },
+
   {
-    "id": 12,
-    "badge": "APP STORE",
-    "time": "NEW",
-    "title": "Vidhwaan App Store",
-    "description": "Discover and launch all Vidhwaan applications from one place. Explore AI platforms, productivity tools, education apps, community solutions, business services and future innovations across the growing Vidhwaan ecosystem.",
-    "url": "https://store.vidhwaan.com"
-  },
-  {
-    "id": 13,
+    "id": 7,
     "badge": "OFFICIAL",
     "time": "GLOBAL NETWORK",
     "title": "Vidhwaan",
