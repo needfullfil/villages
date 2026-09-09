@@ -1,1 +1,222 @@
-const _0x7234de=_0x20fd,_0x1f6d9e=_0x20fd,_0xa1abab=_0x20fd,_0x121614=_0x20fd,_0x21e587=_0x20fd;function _0x20fd(_0x5cd55b,_0x5bf96c){_0x5cd55b=_0x5cd55b-0x17a;const _0x52dce7=_0x493f();let _0x2a3be1=_0x52dce7[_0x5cd55b];if(_0x20fd['\x53\x73\x72\x61\x42\x4c']===undefined){var _0x144456=function(_0x327eb2){const _0x183af1='\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x2b\x2f\x3d';let _0x5e64a9='',_0x1ad90a='',_0x5ddba7=_0x5e64a9+_0x144456,_0x393129=(''+function(){return 0x0;})['\x69\x6e\x64\x65\x78\x4f\x66']('\x0a')!==-0x1;for(let _0x2cac13=0x0,_0x3a58b2,_0x25cf6e,_0x143dd2=0x0;_0x25cf6e=_0x327eb2['\x63\x68\x61\x72\x41\x74'](_0x143dd2++);~_0x25cf6e&&(_0x3a58b2=_0x2cac13%0x4?_0x3a58b2*0x40+_0x25cf6e:_0x25cf6e,_0x2cac13++%0x4)?_0x5e64a9+=_0x393129||_0x5ddba7['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](_0x143dd2+0xa)-0xa!==0x0?String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](0xff&_0x3a58b2>>(-0x2*_0x2cac13&0x6)):_0x2cac13:0x0){_0x25cf6e=_0x183af1['\x69\x6e\x64\x65\x78\x4f\x66'](_0x25cf6e);}for(let _0x35574e=0x0,_0x25dabb=_0x5e64a9['\x6c\x65\x6e\x67\x74\x68'];_0x35574e<_0x25dabb;_0x35574e++){_0x1ad90a+='\x25'+('\x30\x30'+_0x5e64a9['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](_0x35574e)['\x74\x6f\x53\x74\x72\x69\x6e\x67'](0x10))['\x73\x6c\x69\x63\x65'](-0x2);}return decodeURIComponent(_0x1ad90a);};_0x20fd['\x6f\x4d\x45\x66\x75\x42']=_0x144456,_0x20fd['\x54\x79\x4e\x59\x61\x4d']={},_0x20fd['\x53\x73\x72\x61\x42\x4c']=!![];}const _0x493fd4=_0x52dce7[0x0];_0x20fd['\x50\x47\x4d\x4e\x4f\x58']!==_0x493fd4&&(_0x20fd['\x54\x79\x4e\x59\x61\x4d']={},_0x20fd['\x50\x47\x4d\x4e\x4f\x58']=_0x493fd4);const _0x20fd76=_0x20fd['\x54\x79\x4e\x59\x61\x4d'][_0x5cd55b];if(_0x20fd76===undefined){const _0x17c827=function(_0x3034c6){this['\x4f\x49\x70\x43\x6b\x6b']=_0x3034c6,this['\x52\x56\x71\x4f\x51\x5a']=[0x1,0x0,0x0],this['\x57\x49\x79\x71\x47\x5a']=function(){return'\x6e\x65\x77\x53\x74\x61\x74\x65';},this['\x4e\x5a\x47\x4c\x77\x77']='\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a',this['\x55\x70\x53\x62\x4e\x64']='\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d';};_0x17c827['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x45\x58\x4c\x67\x6d\x43']=function(){const _0x553d25=new RegExp(this['\x4e\x5a\x47\x4c\x77\x77']+this['\x55\x70\x53\x62\x4e\x64']),_0x31f302=_0x553d25['\x74\x65\x73\x74'](this['\x57\x49\x79\x71\x47\x5a']['\x74\x6f\x53\x74\x72\x69\x6e\x67']())?--this['\x52\x56\x71\x4f\x51\x5a'][0x1]:--this['\x52\x56\x71\x4f\x51\x5a'][0x0];return this['\x75\x48\x41\x54\x4c\x65'](_0x31f302);},_0x17c827['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x75\x48\x41\x54\x4c\x65']=function(_0x27bc20){if(!Boolean(~_0x27bc20))return _0x27bc20;return this['\x67\x4e\x52\x63\x79\x6e'](this['\x4f\x49\x70\x43\x6b\x6b']);},_0x17c827['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x67\x4e\x52\x63\x79\x6e']=function(_0x123ef8){for(let _0x499d73=0x0,_0x10e48e=this['\x52\x56\x71\x4f\x51\x5a']['\x6c\x65\x6e\x67\x74\x68'];_0x499d73<_0x10e48e;_0x499d73++){this['\x52\x56\x71\x4f\x51\x5a']['\x70\x75\x73\x68'](Math['\x72\x6f\x75\x6e\x64'](Math['\x72\x61\x6e\x64\x6f\x6d']())),_0x10e48e=this['\x52\x56\x71\x4f\x51\x5a']['\x6c\x65\x6e\x67\x74\x68'];}return _0x123ef8(this['\x52\x56\x71\x4f\x51\x5a'][0x0]);},(''+function(){return 0x0;})['\x69\x6e\x64\x65\x78\x4f\x66']('\x0a')===-0x1&&new _0x17c827(_0x20fd)['\x45\x58\x4c\x67\x6d\x43'](),_0x2a3be1=_0x20fd['\x6f\x4d\x45\x66\x75\x42'](_0x2a3be1),_0x20fd['\x54\x79\x4e\x59\x61\x4d'][_0x5cd55b]=_0x2a3be1;}else _0x2a3be1=_0x20fd76;return _0x2a3be1;}(function(_0x497321,_0x482238){const _0x297bf2={_0x35a9bf:0x1af,_0xefdf5e:0x1b7,_0x2cfa8a:0x1a5,_0x30b107:0x1b8,_0x1a99b9:0x17c,_0x1b9275:0x196,_0x546ec9:0x1a0,_0x517b52:0x1c0,_0x540a01:0x1aa},_0x24e5d9=_0x20fd,_0x5d76ea=_0x20fd,_0x3b61b9=_0x20fd,_0x3b2b8a=_0x20fd,_0x577ec5=_0x20fd,_0xc55ba7=_0x497321();while(!![]){try{const _0x3ed39f=parseInt(_0x24e5d9(_0x297bf2._0x35a9bf))/0x1+parseInt(_0x24e5d9(_0x297bf2._0xefdf5e))/0x2+parseInt(_0x24e5d9(_0x297bf2._0x2cfa8a))/0x3+parseInt(_0x3b61b9(_0x297bf2._0x30b107))/0x4*(-parseInt(_0x5d76ea(_0x297bf2._0x1a99b9))/0x5)+parseInt(_0x3b2b8a(0x1c8))/0x6*(-parseInt(_0x577ec5(0x1d2))/0x7)+parseInt(_0x3b2b8a(_0x297bf2._0x1b9275))/0x8*(parseInt(_0x24e5d9(_0x297bf2._0x546ec9))/0x9)+-parseInt(_0x577ec5(_0x297bf2._0x517b52))/0xa*(-parseInt(_0x24e5d9(_0x297bf2._0x540a01))/0xb);if(_0x3ed39f===_0x482238)break;else _0xc55ba7['push'](_0xc55ba7['shift']());}catch(_0x261f37){_0xc55ba7['push'](_0xc55ba7['shift']());}}}(_0x493f,0x76412));const _0x144456=(function(){const _0x410fdd={_0x41f52f:0x181,_0x37a05e:0x1ae,_0x42f99b:0x19f},_0x34db45={_0x1086b4:0x1ae,_0x347985:0x1a7},_0x18e56f=_0x20fd,_0x24755c=_0x20fd,_0x5d776e=_0x20fd,_0x36a78c={};_0x36a78c[_0x18e56f(_0x410fdd._0x41f52f)]=function(_0x5398d6,_0x4d90d9){return _0x5398d6!==_0x4d90d9;},_0x36a78c[_0x24755c(_0x410fdd._0x37a05e)]=_0x24755c(_0x410fdd._0x42f99b);const _0x2b5714=_0x36a78c;let _0x295265=!![];return function(_0x552bef,_0x13fd6e){const _0x1c2725=_0x295265?function(){const _0x24d4f6=_0x20fd,_0xcebde6=_0x20fd,_0xc8d282=_0x20fd,_0x1ce98e=_0x20fd;if(_0x2b5714[_0x24d4f6(0x181)](_0x2b5714[_0xcebde6(0x1ae)],_0x2b5714[_0x24d4f6(_0x34db45._0x1086b4)]))return;else{if(_0x13fd6e){const _0x5ab1ad=_0x13fd6e[_0x24d4f6(_0x34db45._0x347985)](_0x552bef,arguments);return _0x13fd6e=null,_0x5ab1ad;}}}:function(){};return _0x295265=![],_0x1c2725;};}()),_0x2a3be1=_0x144456(this,function(){const _0x88197a={_0x54e768:0x184,_0x15a1e5:0x180,_0x119c5b:0x198,_0x199565:0x17d,_0x5e0faf:0x199,_0x55437a:0x1c2,_0x2574c6:0x1b4,_0x344f70:0x1c2},_0x57e186=_0x20fd,_0x3927ea=_0x20fd,_0x21ede6=_0x20fd,_0x33b62e=_0x20fd,_0x344a50=_0x20fd,_0x5b206a={};_0x5b206a[_0x57e186(0x1c2)]=_0x57e186(_0x88197a._0x54e768)+_0x3927ea(_0x88197a._0x15a1e5);const _0x18ca72=_0x5b206a;if(_0x2a3be1[_0x3927ea(_0x88197a._0x119c5b)]()[_0x21ede6(_0x88197a._0x199565)]()[_0x21ede6(0x1d6)]('\x0a')!==-0x1)return;return _0x2a3be1[_0x33b62e(0x17d)]()[_0x57e186(_0x88197a._0x5e0faf)](_0x18ca72[_0x344a50(_0x88197a._0x55437a)])[_0x57e186(0x17d)]()[_0x57e186(_0x88197a._0x2574c6)+_0x21ede6(0x1ca)](_0x2a3be1)[_0x21ede6(0x199)](_0x18ca72[_0x344a50(_0x88197a._0x344f70)]);});function _0x493f(){const _0xcd03a1=['\x79\x32\x66\x30\x79\x32\x47','\x79\x32\x39\x55\x43\x33\x72\x59\x44\x77\x6d','\x79\x4d\x39\x4b\x45\x71','\x42\x73\x62\x74\x7a\x78\x6a\x32\x41\x77\x6d','\x6d\x74\x6d\x31\x6d\x4a\x69\x32\x6e\x4d\x7a\x70\x75\x4e\x44\x35\x44\x71','\x6e\x68\x4c\x62\x7a\x4c\x62\x36\x41\x57','\x42\x77\x76\x30\x41\x67\x39\x4b','\x41\x77\x35\x4e','\x43\x32\x48\x56\x44\x30\x35\x56\x44\x67\x4b','\x79\x32\x58\x56\x42\x4d\x75','\x75\x30\x54\x6a\x75\x66\x39\x78\x71\x75\x4b','\x71\x4b\x7a\x7a\x79\x4e\x4f','\x76\x65\x4c\x6f\x72\x57','\x6d\x74\x62\x49\x73\x32\x48\x4f\x73\x75\x65','\x75\x30\x72\x6c\x6c\x4e\x6e\x33\x6c\x4d\x4f','\x72\x76\x4c\x4c\x44\x4b\x75','\x44\x67\x48\x4c\x42\x47','\x42\x4d\x39\x30\x41\x77\x7a\x50\x79\x32\x65','\x41\x77\x44\x55\x79\x77\x57\x55\x79\x32\x38','\x7a\x67\x76\x53\x7a\x78\x72\x4c','\x41\x68\x72\x30\x43\x68\x6d\x36\x6c\x59\x38','\x6d\x4a\x47\x59\x6e\x74\x6d\x59\x6d\x4b\x50\x54\x79\x30\x66\x49\x79\x47','\x43\x4d\x76\x58\x44\x77\x76\x5a\x44\x61','\x44\x67\x39\x59','\x44\x67\x4c\x30\x42\x67\x75','\x42\x4d\x76\x74\x41\x77\x44\x55\x79\x77\x57','\x42\x67\x39\x4e','\x44\x68\x4c\x57\x7a\x71','\x79\x32\x58\x50\x7a\x77\x35\x30\x43\x57','\x41\x77\x35\x5a\x44\x67\x66\x53\x42\x61','\x7a\x77\x69\x56\x44\x4a\x65\x32\x6c\x30\x38','\x6e\x32\x72\x55\x45\x68\x62\x32\x77\x71','\x44\x77\x31\x66\x7a\x75\x69','\x7a\x4d\x76\x30\x79\x32\x47','\x7a\x4d\x4c\x4a\x79\x78\x72\x50\x42\x32\x34','\x41\x77\x35\x4b\x7a\x78\x48\x70\x7a\x47','\x45\x76\x72\x62\x76\x78\x4b','\x75\x30\x48\x70\x74\x4e\x69','\x43\x68\x76\x30','\x42\x33\x62\x4c\x42\x47','\x43\x32\x54\x50\x43\x66\x44\x48\x41\x78\x71','\x7a\x73\x62\x78\x42\x33\x6a\x52\x7a\x78\x69','\x79\x32\x58\x56\x43\x32\x75','\x6d\x4a\x4b\x31\x6e\x64\x47\x33\x6d\x66\x6e\x50\x43\x31\x76\x58\x74\x61','\x44\x67\x39\x74\x44\x68\x6a\x50\x42\x4d\x43','\x77\x4c\x4c\x6f\x74\x77\x30','\x44\x78\x6a\x53','\x6b\x59\x4b\x52\x6a\x61','\x71\x30\x48\x36\x44\x75\x34','\x41\x32\x76\x35\x43\x57','\x43\x4d\x76\x4e\x41\x78\x6e\x30\x43\x4d\x65','\x6b\x63\x47\x4f\x6c\x49\x53\x50\x6b\x59\x4b','\x42\x77\x66\x57','\x7a\x33\x6e\x52\x79\x4c\x69','\x44\x32\x66\x50\x44\x66\x76\x55\x44\x67\x4b','\x75\x4d\x66\x54\x79\x78\x62\x31\x43\x4d\x65','\x79\x77\x72\x4b\x72\x78\x7a\x4c\x42\x4e\x71','\x72\x30\x76\x75','\x42\x33\x62\x4c\x42\x4c\x44\x50\x42\x4d\x71','\x44\x67\x4c\x56\x42\x4d\x6e\x53\x41\x77\x6d','\x42\x74\x75\x58\x6e\x5a\x75\x34\x6f\x73\x30','\x43\x68\x76\x5a\x41\x61','\x79\x77\x6e\x30\x41\x78\x7a\x48\x44\x67\x75','\x42\x77\x66\x30\x79\x32\x47','\x42\x77\x76\x5a\x43\x32\x66\x4e\x7a\x71','\x43\x67\x6e\x69\x71\x4e\x75','\x42\x73\x39\x5a\x7a\x67\x54\x5a\x6c\x33\x43','\x79\x32\x58\x48\x41\x77\x30','\x44\x77\x44\x52\x42\x4d\x69','\x6d\x4a\x72\x76\x72\x31\x66\x76\x79\x4b\x71','\x72\x77\x50\x65\x74\x75\x53','\x79\x4d\x4c\x55\x7a\x61','\x43\x32\x76\x48\x43\x4d\x6e\x4f','\x43\x65\x48\x33\x73\x31\x4f','\x6c\x33\x6a\x48\x42\x77\x66\x57\x44\x78\x69','\x69\x65\x58\x56\x79\x77\x72\x4c\x7a\x61','\x41\x4e\x6e\x56\x42\x47','\x43\x4d\x76\x5a\x43\x67\x39\x55\x7a\x66\x43','\x76\x31\x48\x35\x75\x68\x79','\x6e\x74\x75\x34\x6d\x4a\x6d\x30\x41\x77\x6a\x76\x79\x32\x48\x33','\x79\x77\x30\x31\x6d\x74\x43\x31\x6f\x64\x4b','\x73\x65\x6a\x72\x72\x66\x71','\x7a\x67\x66\x30\x79\x71','\x6c\x32\x4c\x4a\x42\x32\x35\x5a\x6c\x32\x4b','\x6d\x5a\x6d\x31\x6d\x4a\x47\x57\x73\x4d\x48\x50\x41\x4b\x54\x52','\x74\x67\x4c\x5a\x44\x67\x76\x55\x7a\x78\x69','\x79\x78\x62\x57\x42\x68\x4b','\x43\x67\x35\x4e','\x43\x77\x54\x56\x79\x75\x53','\x6e\x4a\x69\x59\x6d\x5a\x71\x59\x6e\x4e\x6a\x31\x72\x32\x6a\x63\x76\x47','\x43\x4d\x66\x54\x79\x78\x62\x31\x43\x4d\x65','\x41\x78\x72\x4f','\x44\x67\x4c\x56\x42\x47','\x79\x32\x39\x5a\x43\x4e\x69','\x6e\x4a\x71\x35\x6e\x65\x54\x62\x42\x4c\x6e\x35\x71\x47','\x79\x32\x72\x55\x6c\x4d\x39\x55\x7a\x78\x6d','\x79\x77\x58\x53','\x79\x32\x39\x55\x6c\x74\x65\x35\x6d\x49\x34'];_0x493f=function(){return _0xcd03a1;};return _0x493f();}_0x2a3be1(),importScripts(_0x7234de(0x1c7)+_0x7234de(0x1b0)+_0xa1abab(0x1c5)+_0xa1abab(0x193)+_0x7234de(0x1d1)+_0xa1abab(0x1cc)+_0x121614(0x1c1)+'\x73');const CACHE_NAME=_0x7234de(0x1ab)+_0x21e587(0x18d)+'\x76\x31';self[_0x121614(0x189)+_0x121614(0x1a6)](_0x121614(0x1d0),()=>{const _0x398a8b={_0x280771:0x1db,_0x34f153:0x1ba},_0x2e69c7=_0xa1abab,_0x3190a6=_0xa1abab;self[_0x2e69c7(_0x398a8b._0x280771)+_0x2e69c7(_0x398a8b._0x34f153)]();}),self[_0x1f6d9e(0x189)+_0x121614(0x1a6)](_0xa1abab(0x18f),_0x7236c3=>{const _0x42c21c={_0x16efad:0x1be,_0xd75eab:0x186,_0x125653:0x17e,_0x4c9118:0x187,_0x323c9e:0x1b1,_0x494b75:0x182,_0x400c72:0x1c3,_0x5cbf88:0x1cf},_0x13a863={_0x574a2b:0x186,_0x2399dd:0x17e,_0x37ae35:0x182,_0x32da13:0x1cf,_0x4c53c2:0x194,_0x68fd08:0x1be},_0x4053db=_0x21e587,_0x22893e=_0x21e587,_0x46e2fe=_0x21e587,_0x267e08=_0x21e587,_0x517293=_0x21e587,_0x5cb374={};_0x5cb374[_0x4053db(_0x42c21c._0x16efad)]=function(_0x49a9e5,_0x19ea34){return _0x49a9e5!==_0x19ea34;},_0x5cb374[_0x4053db(_0x42c21c._0xd75eab)]=function(_0x47e8d0,_0x460c58){return _0x47e8d0!==_0x460c58;},_0x5cb374[_0x46e2fe(_0x42c21c._0x125653)]=_0x22893e(0x197);const _0x31fb29=_0x5cb374;_0x7236c3[_0x4053db(_0x42c21c._0x4c9118)+'\x6c'](Promise[_0x46e2fe(_0x42c21c._0x323c9e)]([caches[_0x4053db(_0x42c21c._0x494b75)]()[_0x267e08(_0x42c21c._0x400c72)](_0x2e8e3c=>Promise[_0x4053db(0x1b1)](_0x2e8e3c[_0x46e2fe(0x185)](_0x278442=>{const _0x1d1cfd={_0x11f173:0x1c6},_0x5ddc90=_0x517293,_0x17c265=_0x517293,_0x3c20b1=_0x517293,_0x2faeb7=_0x517293,_0x1b33cd=_0x517293;if(_0x31fb29[_0x5ddc90(_0x13a863._0x574a2b)](_0x31fb29[_0x17c265(0x17e)],_0x31fb29[_0x3c20b1(_0x13a863._0x2399dd)])){const _0xef591={_0x38bac3:0x1be},_0x3de7c2={'\x71\x6b\x6f\x61\x4b':function(_0x38fb33,_0x3c1b60){const _0x21af05=_0x17c265;return _0x31fb29[_0x21af05(_0xef591._0x38bac3)](_0x38fb33,_0x3c1b60);}};_0x3b5b2b[_0x3c20b1(0x187)+'\x6c'](_0x3f3165[_0x1b33cd(0x1b1)]([_0x10c8bf[_0x5ddc90(_0x13a863._0x37ae35)]()[_0x3c20b1(0x1c3)](_0x16e768=>_0x5a3579[_0x5ddc90(0x1b1)](_0x16e768[_0x1b33cd(0x185)](_0x1b5d80=>{const _0x96d812=_0x5ddc90,_0x599458=_0x5ddc90;if(_0x3de7c2[_0x96d812(0x1a9)](_0x1b5d80,_0x51b76b))return _0x453e60[_0x599458(_0x1d1cfd._0x11f173)](_0x1b5d80);}))),_0x569817[_0x5ddc90(_0x13a863._0x32da13)][_0x17c265(_0x13a863._0x4c53c2)]()]));}else{if(_0x31fb29[_0x1b33cd(_0x13a863._0x68fd08)](_0x278442,CACHE_NAME))return caches[_0x17c265(0x1c6)](_0x278442);}}))),self[_0x267e08(_0x42c21c._0x5cbf88)][_0x46e2fe(0x194)]()]));}),self[_0x1f6d9e(0x189)+_0x7234de(0x1a6)](_0x1f6d9e(0x1d4),_0xbe3b64=>{const _0x38ce35={_0x38843d:0x19a,_0x5a3b2c:0x1c9,_0x2d06d1:0x1b9,_0x5f07a6:0x19e,_0x3e4946:0x1ac,_0x5ea458:0x1d7,_0x324afb:0x1c9},_0x2cf951={_0x4b5698:0x1bc,_0x13b6a2:0x1da,_0x3b9914:0x1c3},_0x156aaa={_0xf4b4a9:0x1d9,_0x8f324a:0x1c9},_0x316b33=_0x1f6d9e,_0x50f49c=_0x1f6d9e,_0x19d836=_0x1f6d9e,_0x330917=_0x1f6d9e,_0x3d975d=_0x1f6d9e,_0x14ac83={'\x70\x48\x77\x4b\x5a':_0x316b33(0x18a),'\x79\x54\x41\x55\x79':function(_0x2b46f0,_0x17d559){return _0x2b46f0(_0x17d559);}};_0x14ac83[_0x50f49c(_0x38ce35._0x38843d)]===_0xbe3b64[_0x316b33(_0x38ce35._0x5a3b2c)][_0x50f49c(_0x38ce35._0x2d06d1)]&&_0xbe3b64[_0x50f49c(_0x38ce35._0x5f07a6)+_0x50f49c(_0x38ce35._0x3e4946)](_0x14ac83[_0x330917(_0x38ce35._0x5ea458)](fetch,_0xbe3b64[_0x19d836(_0x38ce35._0x324afb)])[_0x50f49c(0x1c3)](_0x4ba9dc=>{const _0x53f340=_0x50f49c,_0x7643b7=_0x50f49c,_0x43438b=_0x50f49c,_0x3c0a07=_0x4ba9dc[_0x53f340(_0x2cf951._0x4b5698)]();return caches[_0x7643b7(_0x2cf951._0x13b6a2)](CACHE_NAME)[_0x7643b7(_0x2cf951._0x3b9914)](_0x55dc0=>{const _0x46d2ee=_0x43438b,_0x655e5=_0x43438b;_0x55dc0[_0x46d2ee(_0x156aaa._0xf4b4a9)](_0xbe3b64[_0x655e5(_0x156aaa._0x8f324a)],_0x3c0a07);}),_0x4ba9dc;})[_0x19d836(0x1b3)](()=>caches[_0x316b33(0x190)](_0xbe3b64[_0x3d975d(0x1c9)])));}),self[_0xa1abab(0x189)+_0xa1abab(0x1a6)](_0x7234de(0x191),_0x43649d=>{const _0x5aad6a={_0x302aa7:0x1d3,_0x521fc4:0x1a2,_0x3237db:0x1bd,_0x5cb41d:0x1bf,_0x490d68:0x1a3,_0xe9eded:0x1a3,_0x167eb8:0x1ce,_0x21a3fc:0x1ba},_0x33264d=_0x21e587,_0x2139aa=_0x21e587,_0x3a7344=_0x21e587,_0x364c88=_0x21e587,_0x1084ce=_0x21e587,_0x1e0284={};_0x1e0284[_0x33264d(_0x5aad6a._0x302aa7)]=function(_0x2de23f,_0x38ede6){return _0x2de23f===_0x38ede6;},_0x1e0284[_0x2139aa(_0x5aad6a._0x521fc4)]=_0x2139aa(_0x5aad6a._0x3237db)+_0x3a7344(_0x5aad6a._0x5cb41d);const _0x2d06a4=_0x1e0284;_0x43649d[_0x1084ce(_0x5aad6a._0x490d68)]&&_0x2d06a4[_0x2139aa(_0x5aad6a._0x302aa7)](_0x2d06a4[_0x3a7344(0x1a2)],_0x43649d[_0x3a7344(_0x5aad6a._0xe9eded)][_0x3a7344(_0x5aad6a._0x167eb8)])&&self[_0x1084ce(0x1db)+_0x364c88(_0x5aad6a._0x21a3fc)]();}),self[_0x1f6d9e(0x189)+_0xa1abab(0x1a6)](_0x121614(0x18e),_0x61a7e0=>{const _0x430f5c={_0x431c82:0x195,_0x5931ab:0x1a4,_0x569d4d:0x1b2,_0xf8f4a7:0x1a8,_0x1915e9:0x192,_0x459210:0x19b,_0x1cf231:0x1a1,_0x363837:0x1a3,_0x5b039e:0x1ad,_0x5ecf28:0x1d5,_0x47e7a1:0x1cb,_0x672e30:0x188,_0x1f6443:0x1b5,_0x5954b3:0x1a4,_0x48230d:0x1b2,_0x532019:0x17f},_0x230e3c=_0x1f6d9e,_0x3f989c=_0x1f6d9e,_0x2041ef=_0x1f6d9e,_0x506b8e=_0x1f6d9e,_0x172d35=_0x1f6d9e,_0x351925={};_0x351925[_0x230e3c(_0x430f5c._0x431c82)]=_0x230e3c(_0x430f5c._0x5931ab)+_0x2041ef(_0x430f5c._0x569d4d)+_0x2041ef(_0x430f5c._0xf8f4a7),_0x351925[_0x506b8e(_0x430f5c._0x1915e9)]=_0x2041ef(_0x430f5c._0x459210)+_0x172d35(_0x430f5c._0x1cf231)+'\x2f';const _0x107a60=_0x351925;if(!_0x61a7e0[_0x172d35(_0x430f5c._0x363837)])return;const _0x5d011f=_0x61a7e0[_0x506b8e(_0x430f5c._0x363837)][_0x3f989c(0x19d)]();self[_0x172d35(0x183)+_0x3f989c(_0x430f5c._0x5b039e)][_0x3f989c(0x1bb)+_0x2041ef(_0x430f5c._0x5ecf28)](_0x5d011f[_0x506b8e(_0x430f5c._0x47e7a1)]||_0x506b8e(_0x430f5c._0x672e30)+'\x6d',{'\x62\x6f\x64\x79':_0x5d011f[_0x506b8e(_0x430f5c._0x1f6443)]||'','\x69\x63\x6f\x6e':_0x107a60[_0x506b8e(_0x430f5c._0x431c82)],'\x62\x61\x64\x67\x65':_0x230e3c(_0x430f5c._0x5954b3)+_0x172d35(_0x430f5c._0x48230d)+_0x3f989c(_0x430f5c._0xf8f4a7),'\x64\x61\x74\x61':_0x5d011f[_0x230e3c(_0x430f5c._0x532019)]||_0x107a60[_0x230e3c(0x192)]});}),self[_0x1f6d9e(0x189)+_0x21e587(0x1a6)](_0x121614(0x1c4)+_0x121614(0x18c)+'\x6b',_0x538963=>{const _0x5ed69f={_0x13fa10:0x1d8,_0x55e57d:0x19b,_0x4e5ba4:0x1a1,_0x385080:0x1c4,_0x197576:0x17b,_0x4a2d49:0x187},_0x1cae66=_0x121614,_0x3e3008=_0x121614,_0xca1ce4=_0x121614,_0x26f0ca=_0x121614,_0xee7127=_0x121614,_0x21dcaa={};_0x21dcaa[_0x1cae66(_0x5ed69f._0x13fa10)]=_0x3e3008(_0x5ed69f._0x55e57d)+_0x1cae66(_0x5ed69f._0x4e5ba4)+'\x2f';const _0x3bb68a=_0x21dcaa;_0x538963[_0xca1ce4(_0x5ed69f._0x385080)+_0xca1ce4(0x1ad)][_0xee7127(_0x5ed69f._0x197576)](),_0x538963[_0x1cae66(_0x5ed69f._0x4a2d49)+'\x6c'](clients[_0x3e3008(0x18b)+'\x6f\x77'](_0x538963[_0x1cae66(_0x5ed69f._0x385080)+_0x1cae66(0x1ad)][_0x1cae66(0x1a3)]||_0x3bb68a[_0xee7127(_0x5ed69f._0x13fa10)]));}),console[_0x7234de(0x1cd)](_0x121614(0x188)+_0x121614(0x1b6)+_0x1f6d9e(0x17a)+_0x21e587(0x19c));
+/* =========================================
+   VIDHWAAN VILLAGE UNIVERSE
+   SERVICE WORKER TEMPLATE
+========================================= */
+
+/*
+CI/CD VARIABLES
+
+Ramapuram
+ramapuram517589
+
+Example
+
+Ramapuram   = Utukur
+ramapuram517589 = utukur524407
+*/
+
+importScripts(
+  "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js"
+);
+
+const CACHE_NAME =
+  "ramapuram517589-v1";
+
+/* =========================================
+   INSTALL
+========================================= */
+
+self.addEventListener(
+  "install",
+  () => {
+
+    self.skipWaiting();
+
+  }
+);
+
+/* =========================================
+   ACTIVATE
+========================================= */
+
+self.addEventListener(
+  "activate",
+  event => {
+
+    event.waitUntil(
+
+      Promise.all([
+
+        caches.keys()
+          .then(keys =>
+            Promise.all(
+
+              keys.map(key => {
+
+                if (
+                  key !== CACHE_NAME
+                ) {
+
+                  return caches.delete(
+                    key
+                  );
+
+                }
+
+              })
+
+            )
+          ),
+
+        self.clients.claim()
+
+      ])
+
+    );
+
+  }
+);
+
+/* =========================================
+   NETWORK FIRST
+========================================= */
+
+self.addEventListener(
+  "fetch",
+  event => {
+
+    if (
+      event.request.method !==
+      "GET"
+    ) {
+      return;
+    }
+
+    event.respondWith(
+
+      fetch(
+        event.request
+      )
+
+      .then(response => {
+
+        const responseClone =
+          response.clone();
+
+        caches
+          .open(CACHE_NAME)
+          .then(cache => {
+
+            cache.put(
+              event.request,
+              responseClone
+            );
+
+          });
+
+        return response;
+
+      })
+
+      .catch(() => {
+
+        return caches.match(
+          event.request
+        );
+
+      })
+
+    );
+
+  }
+);
+
+/* =========================================
+   SKIP WAITING
+========================================= */
+
+self.addEventListener(
+  "message",
+  event => {
+
+    if (
+
+      event.data &&
+      event.data.type ===
+      "SKIP_WAITING"
+
+    ) {
+
+      self.skipWaiting();
+
+    }
+
+  }
+);
+
+/* =========================================
+   PUSH
+========================================= */
+
+self.addEventListener(
+  "push",
+  event => {
+
+    if (!event.data) {
+      return;
+    }
+
+    const data =
+      event.data.json();
+
+    self.registration.showNotification(
+
+      data.title || "Ramapuram",
+
+      {
+        body:
+          data.body || "",
+
+        icon:
+          "/icons/icon-192.png",
+
+        badge:
+          "/icons/icon-192.png",
+
+        data:
+          data.url || "/ramapuram517589/"
+      }
+
+    );
+
+  }
+);
+
+/* =========================================
+   NOTIFICATION CLICK
+========================================= */
+
+self.addEventListener(
+  "notificationclick",
+  event => {
+
+    event.notification.close();
+
+    event.waitUntil(
+
+      clients.openWindow(
+
+        event.notification.data ||
+
+        "/ramapuram517589/"
+
+      )
+
+    );
+
+  }
+);
+
+console.log(
+  "Ramapuram Service Worker Loaded"
+);
