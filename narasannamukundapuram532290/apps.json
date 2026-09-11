@@ -145,16 +145,41 @@
   },
 
   {
-    "id": "app-store",
-    "name": "VIDHWAAN App Store",
-    "category": "విధ్వాన్ యాప్స్",
-    "badge": "అన్ని విధ్వాన్ యాప్స్ ఒకే చోట",
-    "description": "విధ్వాన్‌లోని అన్ని యాప్స్‌ను ఒకే చోట యాక్సెస్ చేయడానికి అధికారిక యాప్ స్టోర్. మీకు అవసరమైన విధ్వాన్ యాప్‌ను సులభంగా కనుగొని యాక్సెస్ చేసుకోండి.",
-    "url": "https://store.vidhwaan.com",
-    "icon": "https://store.vidhwaan.com/icons/logo.png",
+    "id": "vidhwaan-time",
+    "name": "VIDHWAAN Time",
+    "category": "సమయం",
+    "badge": "తరువాతి తరం సమయ వ్యవస్థ",
+    "description": "అందంగా రూపొందించిన అనలాగ్ మరియు డిజిటల్ గడియారం ద్వారా VIDHWAAN Time System‌ను అనుభవించండి. రోజువారీ జీవితం మరియు భవిష్యత్ స్మార్ట్ పరికరాల కోసం రూపొందించిన రియల్-టైమ్ క్లాక్‌తో సమయాన్ని అర్థం చేసుకునే కొత్త విధానాన్ని తెలుసుకోండి.",
+    "url": "https://time.vidhwaan.com",
+    "icon": "https://time.vidhwaan.com/icons/icon-512.png",
     "featured": false
   },
-  
+
+  {
+    "id": "calculator",
+    "name": "VIDHWAAN Calculator",
+    "category": "ఉపయోగకరమైన టూల్స్",
+    "badge": "స్మార్ట్ కాలిక్యులేటర్",
+    "description": "రోజువారీ లెక్కలు, శాతాలు, డిస్కౌంట్లు, సైంటిఫిక్ లెక్కలు మరియు మరెన్నో లెక్కలను సులభంగా చేసుకోండి.",
+    "url": "https://calculator.vidhwaan.com",
+    "icon": "https://calculator.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+
+
+  {
+    "id": "clock",
+    "name": "VIDHWAAN Clock",
+    "category": "సమయం",
+    "badge": "స్మార్ట్ టైమ్ యాప్",
+    "description": "డిజిటల్ సమయం, లైవ్ క్లాక్, స్టాప్‌వాచ్, టైమర్ మరియు అలారం వంటి సమయ సాధనాలను సులభంగా ఉపయోగించండి.",
+    "url": "https://clock.vidhwaan.com",
+    "icon": "https://clock.vidhwaan.com/icons/icon-512.png",
+    "featured": false
+  },
+
+
+
   {
     "id": "ccl",
     "name": "CCL",
@@ -166,16 +191,22 @@
     "featured": false
   },
 
+
+
   {
-    "id": "vidhwaan-time",
-    "name": "VIDHWAAN Time",
-    "category": "సమయం",
-    "badge": "తరువాతి తరం సమయ వ్యవస్థ",
-    "description": "అందంగా రూపొందించిన అనలాగ్ మరియు డిజిటల్ గడియారం ద్వారా VIDHWAAN Time System‌ను అనుభవించండి. రోజువారీ జీవితం మరియు భవిష్యత్ స్మార్ట్ పరికరాల కోసం రూపొందించిన రియల్-టైమ్ క్లాక్‌తో సమయాన్ని అర్థం చేసుకునే కొత్త విధానాన్ని తెలుసుకోండి.",
-    "url": "https://time.vidhwaan.com",
-    "icon": "https://time.vidhwaan.com/icons/icon-512.png",
+    "id": "app-store",
+    "name": "VIDHWAAN App Store",
+    "category": "విధ్వాన్ యాప్స్",
+    "badge": "అన్ని విధ్వాన్ యాప్స్ ఒకే చోట",
+    "description": "విధ్వాన్‌లోని అన్ని యాప్స్‌ను ఒకే చోట యాక్సెస్ చేయడానికి అధికారిక యాప్ స్టోర్. మీకు అవసరమైన విధ్వాన్ యాప్‌ను సులభంగా కనుగొని యాక్సెస్ చేసుకోండి.",
+    "url": "https://store.vidhwaan.com",
+    "icon": "https://store.vidhwaan.com/icons/logo.png",
     "featured": false
   },
+  
+
+
+
 
 
 
