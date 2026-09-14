@@ -1,6 +1,17 @@
 [
 
   {
+    "id": "vidhwaan-notifications",
+    "name": "VIDHWAAN Notifications",
+    "category": "విధ్వాన్ సమాచారం",
+    "badge": "విధ్వాన్ ప్రకటనలు",
+    "description": "విధ్వాన్ నుండి ముఖ్యమైన ప్రకటనలు, యాప్స్ మరియు సేవల పరిచయాలు, వ్యాపార అవకాశాలు, బిజినెస్ ప్రపోజల్స్, ప్రత్యేక కార్యక్రమాలు మరియు ఇతర అధికారిక సమాచారాన్ని ఒకే చోట తెలుసుకోండి.",
+    "url": "https://vidhwaan.com/notifications",
+    "icon": "https://vidhwaan.com/icons1/logo.png",
+    "featured": true
+  },
+
+  {
     "id": "marketplace",
     "name": "Village Marketplace",
     "category": "గ్రామ మార్కెట్",
@@ -8,7 +19,7 @@
     "description": "మీ గ్రామంలో కొనుగోలు, అమ్మకం మరియు స్థానిక డెలివరీ కోసం గ్రామ మార్కెట్ వేదిక. స్థానిక వ్యాపారాన్ని మరియు గ్రామీణ వాణిజ్యాన్ని సులభంగా అనుసంధానించే వ్యవస్థ.",
     "url": "market.html",
     "icon": "https://market.vidhwaan.com/icons/icon-512.png",
-    "featured": true
+    "featured": false
   },
 
   {
@@ -202,9 +213,6 @@
     "featured": false
   },
   
-
-
-
 
 
 
