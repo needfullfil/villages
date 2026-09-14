@@ -1,15 +1,5 @@
 [
 
-  {
-    "id": "vidhwaan-notifications",
-    "name": "VIDHWAAN Notifications",
-    "category": "విధ్వాన్ సమాచారం",
-    "badge": "విధ్వాన్ ప్రకటనలు",
-    "description": "విధ్వాన్ నుండి ముఖ్యమైన ప్రకటనలు, యాప్స్ మరియు సేవల పరిచయాలు, వ్యాపార అవకాశాలు, బిజినెస్ ప్రపోజల్స్, ప్రత్యేక కార్యక్రమాలు మరియు ఇతర అధికారిక సమాచారాన్ని ఒకే చోట తెలుసుకోండి.",
-    "url": "https://vidhwaan.com/notifications",
-    "icon": "https://vidhwaan.com/icons1/logo.png",
-    "featured": true
-  },
 
   {
     "id": "marketplace",
@@ -211,6 +201,18 @@
     "url": "https://store.vidhwaan.com",
     "icon": "https://store.vidhwaan.com/icons/logo.png",
     "featured": false
+  },
+
+
+  {
+    "id": "vidhwaan-notifications",
+    "name": "VIDHWAAN Notifications",
+    "category": "విధ్వాన్ సమాచారం",
+    "badge": "విధ్వాన్ ప్రకటనలు",
+    "description": "విధ్వాన్ నుండి ముఖ్యమైన ప్రకటనలు, యాప్స్ మరియు సేవల పరిచయాలు, వ్యాపార అవకాశాలు, బిజినెస్ ప్రపోజల్స్, ప్రత్యేక కార్యక్రమాలు మరియు ఇతర అధికారిక సమాచారాన్ని ఒకే చోట తెలుసుకోండి.",
+    "url": "https://vidhwaan.com/notifications",
+    "icon": "https://vidhwaan.com/icons1/logo.png",
+    "featured": true
   },
   
 
