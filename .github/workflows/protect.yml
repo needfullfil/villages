@@ -1,3 +1,4 @@
+
 name: Protect Frontend
 
 on:
@@ -24,31 +25,58 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-        
 
       - name: Install Dependencies
         run: npm install
 
+      # DIAGNOSTIC: Check every required file
       - name: Verify Project Files
+        shell: bash
         run: |
-          set -e
+          echo "======================================"
+          echo "VIDHWAAN FILE VERIFICATION"
+          echo "======================================"
 
-          test -f package.json
-          test -f scripts/protect.js
+          FILES=(
+            "package.json"
+            "scripts/protect.js"
+            "index.html"
+            "app.js"
+            "market.html"
+            "market.js"
+            "market.css"
+            "search.js"
+            "main.css"
+            "styles.css"
+          )
 
-          test -f index.html
-          test -f app.js
-          test -f market.html
-          test -f market.js
-          test -f market.css
-          test -f search.js
-          test -f main.css
-          test -f styles.css
+          MISSING=0
+
+          for file in "${FILES[@]}"; do
+            if [ -f "$file" ]; then
+              echo "PASS: $file"
+            else
+              echo "MISSING: $file"
+              MISSING=$((MISSING + 1))
+            fi
+          done
+
+          echo "======================================"
+          echo "TOTAL MISSING: $MISSING"
+          echo "======================================"
+
+          if [ "$MISSING" -gt 0 ]; then
+            echo "Verification failed."
+            exit 1
+          fi
+
+          echo "All required files are present."
 
       - name: Run Protection Pipeline
         run: npm run protect
 
       - name: Verify Output Files
+        shell: bash
         run: |
           set -e
 
@@ -60,6 +88,8 @@ jobs:
           test -f search.js
           test -f main.css
           test -f styles.css
+
+          echo "All output files verified."
 
       - name: Show Repository Status
         run: |
