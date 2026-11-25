@@ -1,3 +1,4 @@
+
 const fs = require("fs-extra");
 const path = require("path");
 const { minify: terserMinify } = require("terser");
@@ -11,20 +12,6 @@ const ROOT = process.cwd();
  * ==========================================================
  * FILE DISCOVERY
  * ==========================================================
- *
- * Process every .html, .css, .js and .json file anywhere
- * inside the repository.
- *
- * Exclusions:
- *   - node_modules
- *   - .git
- *   - .github
- *   - scripts/protect.js
- *   - template.html
- *
- * IMPORTANT:
- *   sw.js is NOT excluded.
- *   Every sw.js is processed, but only minified.
  */
 
 const EXCLUDED_DIRECTORIES = new Set([
@@ -64,11 +51,11 @@ async function discoverFiles(directory = ROOT) {
         continue;
       }
 
-      if (!entry.isFile()) {
-        continue;
-      }
+      if (!entry.isFile()) continue;
 
-      const normalizedPath = relativePath.split(path.sep).join("/");
+      const normalizedPath = relativePath
+        .split(path.sep)
+        .join("/");
 
       if (EXCLUDED_FILES.has(normalizedPath)) {
         continue;
@@ -124,10 +111,6 @@ async function verifyFiles(files, type) {
  * ==========================================================
  * FORCE ONE PHYSICAL LINE
  * ==========================================================
- *
- * After minification, obfuscation or JSON compression,
- * every generated file must physically contain exactly
- * one line.
  */
 
 function forceOneLine(content) {
@@ -162,7 +145,7 @@ async function atomicWrite(file, content) {
 
 /*
  * ==========================================================
- * JAVASCRIPT
+ * JAVASCRIPT PROTECTION
  * ==========================================================
  */
 
@@ -179,9 +162,7 @@ async function protectJavaScript(file) {
   }
 
   /*
-   * ========================================================
    * STEP 1 — TERSER MINIFICATION
-   * ========================================================
    */
 
   const terserResult = await terserMinify(source, {
@@ -238,13 +219,8 @@ async function protectJavaScript(file) {
   }
 
   /*
-   * ========================================================
    * SERVICE WORKER
-   * ========================================================
-   *
-   * sw.js is intentionally NOT obfuscated.
-   *
-   * It receives Terser minification only.
+   * Minification only. No obfuscation.
    */
 
   if (fileName === "sw.js") {
@@ -269,39 +245,24 @@ async function protectJavaScript(file) {
   }
 
   /*
-   * ========================================================
    * STEP 2 — STRONG JAVASCRIPT OBFUSCATION
-   * ========================================================
    */
 
   const obfuscated = JavaScriptObfuscator.obfuscate(
     terserResult.code,
     {
       compact: true,
-
       simplify: true,
 
-      /*
-       * Control-flow protection
-       */
       controlFlowFlattening: true,
       controlFlowFlatteningThreshold: 0.75,
 
-      /*
-       * Dead-code injection
-       */
       deadCodeInjection: true,
       deadCodeInjectionThreshold: 0.20,
 
-      /*
-       * Identifier protection
-       */
       identifierNamesGenerator: "hexadecimal",
       renameGlobals: false,
 
-      /*
-       * String protection
-       */
       stringArray: true,
       stringArrayCallsTransform: true,
       stringArrayCallsTransformThreshold: 0.75,
@@ -321,45 +282,21 @@ async function protectJavaScript(file) {
 
       stringArrayThreshold: 1,
 
-      /*
-       * Split strings
-       */
       splitStrings: true,
       splitStringsChunkLength: 8,
 
-      /*
-       * Object/property protection
-       */
       transformObjectKeys: true,
 
-      /*
-       * Unicode escaping
-       */
       unicodeEscapeSequence: true,
 
-      /*
-       * Browser compatibility
-       */
       target: "browser",
 
-      /*
-       * Do not use aggressive anti-debugging.
-       */
       debugProtection: false,
 
-      /*
-       * Keep console/error diagnostics available.
-       */
       disableConsoleOutput: false,
 
-      /*
-       * Self-defending output.
-       */
       selfDefending: true,
 
-      /*
-       * Never generate source maps.
-       */
       sourceMap: false
     }
   );
@@ -370,9 +307,6 @@ async function protectJavaScript(file) {
     throw new Error(`Obfuscator produced empty output: ${file}`);
   }
 
-  /*
-   * Force final obfuscated JavaScript to one line.
-   */
   const finalCode = forceOneLine(protectedCode);
 
   await atomicWrite(fullPath, finalCode);
@@ -394,7 +328,7 @@ async function protectJavaScript(file) {
 
 /*
  * ==========================================================
- * CSS
+ * CSS OPTIMIZATION
  * ==========================================================
  */
 
@@ -436,9 +370,6 @@ async function optimizeCSS(file) {
     );
   }
 
-  /*
-   * Force final CSS to one physical line.
-   */
   const finalCSS = forceOneLine(result.styles);
 
   await atomicWrite(fullPath, finalCSS);
@@ -460,7 +391,7 @@ async function optimizeCSS(file) {
 
 /*
  * ==========================================================
- * HTML
+ * HTML OPTIMIZATION
  * ==========================================================
  */
 
@@ -506,9 +437,6 @@ async function optimizeHTML(file) {
     );
   }
 
-  /*
-   * Force final HTML to one physical line.
-   */
   const finalHTML = forceOneLine(output);
 
   await atomicWrite(fullPath, finalHTML);
@@ -530,19 +458,8 @@ async function optimizeHTML(file) {
 
 /*
  * ==========================================================
- * JSON
+ * JSON COMPRESSION
  * ==========================================================
- *
- * Every .json file is:
- *
- *   1. Read
- *   2. Parsed to validate JSON
- *   3. Re-serialized using JSON.stringify()
- *   4. Written as one physical line
- *   5. Verified again
- *
- * No JSON data is intentionally changed.
- * Only unnecessary whitespace/formatting is removed.
  */
 
 async function optimizeJSON(file) {
@@ -582,17 +499,10 @@ async function optimizeJSON(file) {
     );
   }
 
-  /*
-   * JSON.stringify() normally produces one line.
-   * forceOneLine() provides the final physical-line guarantee.
-   */
   const finalJSON = forceOneLine(output);
 
   await atomicWrite(fullPath, finalJSON);
 
-  /*
-   * Verify final JSON is still valid.
-   */
   const finalSource = await fs.readFile(fullPath, "utf8");
 
   if (!finalSource.trim()) {
@@ -636,21 +546,12 @@ async function verifyOutput(files, type) {
       throw new Error(`Empty output ${type}: ${file}`);
     }
 
-    /*
-     * ======================================================
-     * ONE-LINE VERIFICATION
-     * ======================================================
-     */
-
     if (source.includes("\n") || source.includes("\r")) {
       throw new Error(
         `Output is NOT one line: ${file}`
       );
     }
 
-    /*
-     * Additional JSON validation.
-     */
     if (type === "JSON") {
       try {
         JSON.parse(source);
@@ -661,6 +562,91 @@ async function verifyOutput(files, type) {
       }
     }
   }
+}
+
+/*
+ * ==========================================================
+ * COMPLETE PROJECT INVENTORY
+ * ==========================================================
+ */
+
+function printInventory(files) {
+  const HTML_FILES = files.html;
+  const CSS_FILES = files.css;
+  const JS_FILES = files.js;
+  const JSON_FILES = files.json;
+
+  const SERVICE_WORKERS = JS_FILES.filter(
+    file => path.basename(file).toLowerCase() === "sw.js"
+  );
+
+  const OBFUSCATED_JS = JS_FILES.filter(
+    file => path.basename(file).toLowerCase() !== "sw.js"
+  );
+
+  const totalFiles =
+    HTML_FILES.length +
+    CSS_FILES.length +
+    JS_FILES.length +
+    JSON_FILES.length;
+
+  console.log("");
+  console.log("================================================");
+  console.log("       VIDHWAAN COMPLETE PROJECT INVENTORY");
+  console.log("================================================");
+
+  console.log("");
+  console.log("================ FILE COUNTS ==================");
+
+  console.log(`HTML files found       : ${HTML_FILES.length}`);
+  console.log(`CSS files found        : ${CSS_FILES.length}`);
+  console.log(`JS files found         : ${JS_FILES.length}`);
+  console.log(`JSON files found       : ${JSON_FILES.length}`);
+  console.log(`JS files to obfuscate  : ${OBFUSCATED_JS.length}`);
+  console.log(`SW files to minify     : ${SERVICE_WORKERS.length}`);
+  console.log(`TOTAL FILES            : ${totalFiles}`);
+
+  console.log("");
+  console.log("================ HTML FILES ====================");
+
+  HTML_FILES.forEach((file, i) => {
+    console.log(`${i + 1}. ${file}`);
+  });
+
+  console.log("");
+  console.log("================ CSS FILES =====================");
+
+  CSS_FILES.forEach((file, i) => {
+    console.log(`${i + 1}. ${file}`);
+  });
+
+  console.log("");
+  console.log("================ JS FILES ======================");
+
+  JS_FILES.forEach((file, i) => {
+    console.log(`${i + 1}. ${file}`);
+  });
+
+  console.log("");
+  console.log("================ JSON FILES ====================");
+
+  JSON_FILES.forEach((file, i) => {
+    console.log(`${i + 1}. ${file}`);
+  });
+
+  console.log("");
+  console.log("=========== INVENTORY COMPLETE =================");
+  console.log("");
+
+  return {
+    HTML_FILES,
+    CSS_FILES,
+    JS_FILES,
+    JSON_FILES,
+    SERVICE_WORKERS,
+    OBFUSCATED_JS,
+    totalFiles
+  };
 }
 
 /*
@@ -680,33 +666,21 @@ async function main() {
 
   const files = await discoverFiles();
 
-  const HTML_FILES = files.html;
-  const CSS_FILES = files.css;
-  const JS_FILES = files.js;
-  const JSON_FILES = files.json;
+  /*
+   * PRINT COMPLETE INVENTORY BEFORE VERIFICATION
+   */
 
-  const SERVICE_WORKERS = JS_FILES.filter(
-    file => path.basename(file).toLowerCase() === "sw.js"
-  );
+  const inventory = printInventory(files);
 
-  const OBFUSCATED_JS = JS_FILES.filter(
-    file => path.basename(file).toLowerCase() !== "sw.js"
-  );
-
-  console.log("");
-  console.log(`HTML files found       : ${HTML_FILES.length}`);
-  console.log(`CSS files found        : ${CSS_FILES.length}`);
-  console.log(`JS files found         : ${JS_FILES.length}`);
-  console.log(`JSON files found       : ${JSON_FILES.length}`);
-  console.log(`JS files to obfuscate  : ${OBFUSCATED_JS.length}`);
-  console.log(`SW files to minify     : ${SERVICE_WORKERS.length}`);
-  console.log("");
-
-  const totalFiles =
-    HTML_FILES.length +
-    CSS_FILES.length +
-    JS_FILES.length +
-    JSON_FILES.length;
+  const {
+    HTML_FILES,
+    CSS_FILES,
+    JS_FILES,
+    JSON_FILES,
+    SERVICE_WORKERS,
+    OBFUSCATED_JS,
+    totalFiles
+  } = inventory;
 
   if (totalFiles === 0) {
     throw new Error(
@@ -715,73 +689,94 @@ async function main() {
   }
 
   /*
-   * Verify all discovered files before modifying anything.
+   * VERIFY ALL DISCOVERED FILES BEFORE MODIFYING ANYTHING
    */
-  console.log("Verifying discovered files...");
-
-  await verifyFiles(HTML_FILES, "HTML");
-  await verifyFiles(CSS_FILES, "CSS");
-  await verifyFiles(JS_FILES, "JavaScript");
-  await verifyFiles(JSON_FILES, "JSON");
 
   console.log("");
-  console.log("All frontend files verified.");
+  console.log("================================================");
+  console.log("          VERIFY PROJECT FILES");
+  console.log("================================================");
+  console.log("");
+
+  console.log("Verifying HTML files...");
+  await verifyFiles(HTML_FILES, "HTML");
+  console.log("HTML verification passed.");
+
+  console.log("");
+  console.log("Verifying CSS files...");
+  await verifyFiles(CSS_FILES, "CSS");
+  console.log("CSS verification passed.");
+
+  console.log("");
+  console.log("Verifying JavaScript files...");
+  await verifyFiles(JS_FILES, "JavaScript");
+  console.log("JavaScript verification passed.");
+
+  console.log("");
+  console.log("Verifying JSON files...");
+  await verifyFiles(JSON_FILES, "JSON");
+  console.log("JSON verification passed.");
+
+  console.log("");
+  console.log("================================================");
+  console.log("       ALL PROJECT FILES VERIFIED");
+  console.log("================================================");
   console.log("");
 
   /*
-   * ========================================================
-   * HTML
-   * ========================================================
+   * HTML OPTIMIZATION
    */
+
+  console.log("Starting HTML optimization...");
 
   for (const file of HTML_FILES) {
     await optimizeHTML(file);
   }
 
   /*
-   * ========================================================
-   * CSS
-   * ========================================================
+   * CSS OPTIMIZATION
    */
+
+  console.log("");
+  console.log("Starting CSS optimization...");
 
   for (const file of CSS_FILES) {
     await optimizeCSS(file);
   }
 
   /*
-   * ========================================================
-   * JAVASCRIPT
-   * ========================================================
+   * JAVASCRIPT PROTECTION
    *
-   * Normal JS:
-   *   Terser + Obfuscator
-   *
-   * sw.js:
-   *   Terser only
+   * Normal JS: Terser + Obfuscator
+   * sw.js: Terser only
    */
+
+  console.log("");
+  console.log("Starting JavaScript protection...");
 
   for (const file of JS_FILES) {
     await protectJavaScript(file);
   }
 
   /*
-   * ========================================================
-   * JSON
-   * ========================================================
+   * JSON COMPRESSION
    */
+
+  console.log("");
+  console.log("Starting JSON compression...");
 
   for (const file of JSON_FILES) {
     await optimizeJSON(file);
   }
 
   /*
-   * ========================================================
    * FINAL VERIFICATION
-   * ========================================================
    */
 
   console.log("");
-  console.log("Running final verification...");
+  console.log("================================================");
+  console.log("          FINAL PROJECT VERIFICATION");
+  console.log("================================================");
   console.log("");
 
   await verifyOutput(HTML_FILES, "HTML");
@@ -812,6 +807,7 @@ async function main() {
   console.log(`SW minified only    : ${SERVICE_WORKERS.length}`);
   console.log(`JSON compressed     : ${JSON_FILES.length}`);
   console.log(`Total processed     : ${totalFiles}`);
+
   console.log("");
 }
 
