@@ -10,12 +10,10 @@ on:
     paths:
       - apvillages.json
       - template.html
-      - index.html
       - market.html
       - manifest.json
       - sw.js
       - apps.json
-      
 
 permissions:
   contents: write
@@ -164,8 +162,6 @@ jobs:
             "app.js",
 
             "main.css",
-
-            "index.html",
 
             "apvillages.json",
 
